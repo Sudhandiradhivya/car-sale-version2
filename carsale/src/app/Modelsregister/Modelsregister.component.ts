@@ -21,7 +21,7 @@ OrdersForm=this.fb.group({
     Title:[,[Validators.required]],
     fname:[,[Validators.required]],
     lname:[,[Validators.required]],
-    phonenumber:[,[Validators.required]],
+    phonenumber:[,[Validators.required,Validators.pattern('^[6-9](?!.*(\\d)\\1{4})\\d{9}$')]],
     email:[,[Validators.required]],
     payment:[,[Validators.required]]
   })

@@ -96,6 +96,10 @@
         <div class="inputs">
           <input type="text" placeholder="Phone number" formControlName="phonenumber">
         </div>
+        <div class="validateError" *ngIf="OrdersForm.controls['phonenumber'].dirty">
+          <p class="error" *ngIf="OrdersForm.controls['phonenumber'].errors?.['required']"><i class="fas fa-exclamation-circle"></i>Phone number can't be blank</p>
+          <p class="error" *ngIf="OrdersForm.controls['phonenumber'].errors?.['pattern']"><i class="fas fa-exclamation-circle"></i>Enter valid phonenumber </p>
+        </div>
         <div class="inputs">
           <input type="email" placeholder="Email" formControlName="email">
         </div>

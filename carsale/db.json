@@ -267,6 +267,16 @@
       "payment": 340000,
       "id": 5,
       "status": "Order Accepted"
+    },
+    {
+      "models": "Ghost",
+      "Title": "Mrs",
+      "fname": "priya",
+      "lname": "k",
+      "phonenumber": "6789098569",
+      "email": "priya@gmail.com",
+      "payment": 1500000,
+      "id": 6
     }
   ],
   "Images": [

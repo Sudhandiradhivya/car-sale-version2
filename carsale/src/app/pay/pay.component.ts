@@ -21,5 +21,12 @@ export class PayComponent implements OnInit {
   pay(){
     alert('Pay Successful');
 window.location.reload();
+
   }
+
+
+
+// Call the function when needed
+
+
 }

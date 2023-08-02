@@ -11,7 +11,7 @@
               </div>
               <div class="validateError" *ngIf="Registerforms.controls['username'].dirty">
                 <p class="error" *ngIf="Registerforms.controls['username'].errors?.['required']"><i class="fas fa-exclamation-circle"></i>Username can't be blank</p>
-                <p class="error" *ngIf="Registerforms.controls['username'].errors?.['pattern']"><i class="fas fa-exclamation-circle"></i>Username contain only alphabets</p>
+                <p class="error" *ngIf="Registerforms.controls['username'].errors?.['pattern']"><i class="fas fa-exclamation-circle"></i>Please enter the valid username</p>
              </div>
               <div class="input-field">
                   <input type="email" placeholder="Enter your email" id="validateEmail" formControlName="email" name="email" >

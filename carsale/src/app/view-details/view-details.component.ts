@@ -62,6 +62,9 @@ this.http.get<any>("http://localhost:3000/GenanerateBills").subscribe((bill)=>{
   }
 })
 
+
+
+
   }
 
 
@@ -77,4 +80,18 @@ openDialog() {
     height:'65%'
   });
 }
+subscribe(): void {
+  const buttonElement: HTMLElement | null = document.querySelector('.js-subscribe-button');
+
+  if (buttonElement && buttonElement instanceof HTMLElement) {
+      if (buttonElement.innerText === 'Pay') {
+        
+          buttonElement.innerHTML = 'Paid';
+      } else {
+          buttonElement.innerHTML = 'Pay';
+      }
+  }
+}
+
+
 }

@@ -36,7 +36,8 @@
     <mat-form-field appearance="fill" style="width: 70%;margin-top: 10px;margin-left: 30px;">
       <mat-label>Payment</mat-label>
       <input matInput placeholder="">{{acceptdetails.payment}}
-      <button mat-button color="primary" style="margin-left: 30px;"  (click)="openDialog()" [disabled]="(acceptdetails.payment)=='' ||acceptdetails.payment==null">Pay</button>
+      <button mat-button color="primary" style="margin-left: 30px;"  (click)="openDialog()" [disabled]="(acceptdetails.payment)=='' ||acceptdetails.payment==null" >Pay</button>
+     
     </mat-form-field>
 
   </p>

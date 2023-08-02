@@ -170,3 +170,7 @@ input[type=submit]{
       margin-top: 9px;
       padding: 4px;
       }
+      .error{
+        color: red;
+        margin-top: 4px;
+      }

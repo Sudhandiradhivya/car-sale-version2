@@ -23,8 +23,8 @@ export class AngularRegisterComponent implements OnInit {
 
   Registerforms = this.fb.group(
     {
-      username: [, [Validators.required, Validators.pattern('^[a-zA-Z]+$')]],
-      email: [,[Validators.required, Validators.pattern('^([a-z0-9.-]+)@([a-z0-9-]+).([a-z]{2,8})(.[a-z]{2,8})$')]],
+      username: [, [Validators.required, Validators.pattern('^(?!.*([a-zA-Z])\\1\\1)[a-zA-Z]+$')]],
+      email: [,[Validators.required, Validators.pattern('^[a-zA-Z0-9._%+-]+@gmail\.com$')]],
       password: [, [Validators.required,Validators.pattern('^[A-Z]{1}[a-z]+[@/!/#/$/%/&][0-9]{2,4}$')]],
       confirmPassword: [, [Validators.required,]],
     },
