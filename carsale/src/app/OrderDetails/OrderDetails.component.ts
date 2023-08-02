@@ -7,6 +7,7 @@ import { HttpClient } from '@angular/common/http';
 import { MatDialog } from '@angular/material/dialog';
 import { ModelsregisterComponent } from '../Modelsregister/Modelsregister.component';
 import { OrderAcceptedPageComponent } from '../OrderAcceptedPage/OrderAcceptedPage.component';
+import { ModellingService } from '../modelling.service';
 @Component({
   selector: 'app-OrderDetails',
   templateUrl: './OrderDetails.component.html',
@@ -22,7 +23,10 @@ export class OrderDetailsComponent implements OnInit {
   DetailService: any;
 
   clicked=false;
-  constructor(private service:DetailServiceService,private http:HttpClient,private dialog:MatDialog) { }
+  usersuccess=false;
+  constructor(private service:DetailServiceService,private http:HttpClient,private dialog:MatDialog,private modellingService:ModellingService) { 
+    this.usersuccess=Boolean(sessionStorage.getItem("usersuccess"))||this.modellingService.userlogin
+  }
   getLoginvalue:any=" ";
    ngOnInit() {
      this.getOrderList();
@@ -84,6 +88,7 @@ a(value:any){
 }
 
 openDialog(value:any) {
+  this.usersuccess=false;
   this.service.billGenerate=value;
   this.dialog.open(OrderAcceptedPageComponent, {
     width:'35%',

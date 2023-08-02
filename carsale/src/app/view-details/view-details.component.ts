@@ -3,6 +3,7 @@ import { Component, OnInit } from '@angular/core';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import { PayComponent } from '../pay/pay.component';
 import { MatDialog } from '@angular/material/dialog';
+import { ModellingService } from '../modelling.service';
 @Component({
   selector: 'app-view-details',
   templateUrl: './view-details.component.html',
@@ -11,8 +12,11 @@ import { MatDialog } from '@angular/material/dialog';
 export class ViewDetailsComponent implements OnInit {
 values: any;
 
+usersuccess=false;
+  constructor(private http:HttpClient,private dialog:MatDialog) { 
+   
 
-  constructor(private http:HttpClient,private dialog:MatDialog) { }
+  }
 getlogged:any="";
 acceptdetails:any="";
 payment:any="";
@@ -75,23 +79,24 @@ getId(values:any){
         });
 }
 openDialog() {
+  
   this.dialog.open(PayComponent, {
     width:'32%',
     height:'65%'
   });
 }
-subscribe(): void {
-  const buttonElement: HTMLElement | null = document.querySelector('.js-subscribe-button');
+// subscribe(): void {
+//   const buttonElement: HTMLElement | null = document.querySelector('.js-subscribe-button');
 
-  if (buttonElement && buttonElement instanceof HTMLElement) {
-      if (buttonElement.innerText === 'Pay') {
+//   if (buttonElement && buttonElement instanceof HTMLElement) {
+//       if (buttonElement.innerText === 'Pay') {
         
-          buttonElement.innerHTML = 'Paid';
-      } else {
-          buttonElement.innerHTML = 'Pay';
-      }
-  }
-}
+//           buttonElement.innerHTML = 'Paid';
+//       } else {
+//           buttonElement.innerHTML = 'Pay';
+//       }
+//   }
+// }
 
 
 }
