@@ -34,6 +34,4 @@ export class HomeComponent implements OnInit {
     location.pathname = ('/Models');
   }
 
-
-
 }

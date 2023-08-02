@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { environment } from 'src/environments/environment';
 
 @Injectable({
   providedIn: 'root'
@@ -11,7 +12,7 @@ postServiceDetails(body:any){
   return this.http.post("http://localhost:3000/serviceDetails",body)
 }
 postOrderDetails(body:any){
-  return this.http.post("http://localhost:3000/Modelsregister",body)
+  return this.http.post((environment.name),body)
 }
 postLoginDetails(body:any){
   return this.http.post("http://localhost:3000/Register",body)
