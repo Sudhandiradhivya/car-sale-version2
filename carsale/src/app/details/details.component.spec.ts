@@ -6,6 +6,11 @@ import { DebugElement } from '@angular/core';
 import { DetailsComponent } from './details.component';
 import { HeaderComponent } from '../header/header.component';
 import { FooterComponent } from '../footer/footer.component';
+import { ImagesComponent } from '../images/images.component';
+import { HttpClientModule } from '@angular/common/http';
+import { DetailServiceService } from '../detailService.service';
+import { ActivatedRoute, convertToParamMap } from '@angular/router';
+import { FormsModule } from '@angular/forms';
 
 describe('DetailsComponent', () => {
   let component: DetailsComponent;
@@ -13,7 +18,17 @@ describe('DetailsComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ DetailsComponent,HeaderComponent,FooterComponent ]
+      declarations: [ DetailsComponent,HeaderComponent,FooterComponent,ImagesComponent ],
+      imports:[HttpClientModule,FormsModule],
+      providers:[DetailServiceService,
+        {
+          provide: ActivatedRoute,
+          useValue: {
+            snapshot: {
+              paramMap: convertToParamMap({ /* mock your route params here */ }),
+            },
+          },
+        },]
     })
     .compileComponents();
   }));

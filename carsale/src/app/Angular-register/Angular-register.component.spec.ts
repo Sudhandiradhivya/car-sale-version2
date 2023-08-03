@@ -9,7 +9,7 @@ import { RegisterValidateService } from '../RegisterValidate.service';
 import { FooterComponent } from '../footer/footer.component';
 import { HeaderComponent } from '../header/header.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { ActivatedRoute, RouterModule } from '@angular/router';
+import { ActivatedRoute, convertToParamMap, RouterModule } from '@angular/router';
 
 describe('AngularRegisterComponent', () => {
   let component: AngularRegisterComponent;
@@ -18,8 +18,19 @@ describe('AngularRegisterComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       imports: [HttpClientModule,ReactiveFormsModule,FormsModule,RouterModule], // Include HttpClientModule here
-      declarations: [AngularRegisterComponent,HeaderComponent,FooterComponent,ActivatedRoute],
-      providers: [RegisterValidateService]
+      declarations: [AngularRegisterComponent,HeaderComponent,FooterComponent],
+      providers:
+       [
+        RegisterValidateService,
+        {
+          provide: ActivatedRoute,
+          useValue: {
+            snapshot: {
+              paramMap: convertToParamMap({ /* mock your route params here */ }),
+            },
+          },
+        },
+      ]
     })
     .compileComponents();
   }));

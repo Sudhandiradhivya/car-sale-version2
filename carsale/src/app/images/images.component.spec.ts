@@ -6,7 +6,9 @@ import { DebugElement } from '@angular/core';
 import { ImagesComponent } from './images.component';
 import { HttpClientModule } from '@angular/common/http';
 import { DetailServiceService } from '../detailService.service';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, RouterModule } from '@angular/router';
+import { HeaderComponent } from '../header/header.component';
+import { FooterComponent } from '../footer/footer.component';
 
 describe('ImagesComponent', () => {
   let component: ImagesComponent;
@@ -14,9 +16,19 @@ describe('ImagesComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      imports: [HttpClientModule], // Include HttpClientModule here
-      declarations: [ImagesComponent],
-      providers: [DetailServiceService,ActivatedRoute]
+      
+      declarations: [ImagesComponent,HeaderComponent,FooterComponent],
+      imports: [HttpClientModule,RouterModule], // Include HttpClientModule here
+      providers: [
+        // Provide ActivatedRoute
+        DetailServiceService,
+        {
+          provide: ActivatedRoute,
+          useValue: {
+            /* Mock the necessary properties or methods of ActivatedRoute */
+          },
+        },]
+      
     })
     .compileComponents();
   }));

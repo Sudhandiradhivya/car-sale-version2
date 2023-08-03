@@ -7,6 +7,7 @@ import { ServiceComponent } from './Service.component';
 import { FooterComponent } from '../footer/footer.component';
 import { HeaderComponent } from '../header/header.component';
 import { RouterLink, RouterModule } from '@angular/router';
+import { ActivatedRoute } from '@angular/router';
 
 
 describe('ServiceComponent', () => {
@@ -16,7 +17,15 @@ describe('ServiceComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [ ServiceComponent,HeaderComponent,FooterComponent],
-      imports:[RouterModule]
+      imports:[RouterModule],
+      providers: [
+        // Provide ActivatedRoute
+        {
+          provide: ActivatedRoute,
+          useValue: {
+            /* Mock the necessary properties or methods of ActivatedRoute */
+          },
+        },]
     })
     .compileComponents();
   }));

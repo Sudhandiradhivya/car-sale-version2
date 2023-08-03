@@ -4,6 +4,7 @@ import { DetailServiceService } from '../detailService.service';
 import {MatPaginator} from '@angular/material/paginator';
 import {MatSort} from '@angular/material/sort';
 import {MatTableDataSource} from '@angular/material/table';
+import { FormControl } from '@angular/forms';
 @Component({
   selector: 'app-userscomponent',
   templateUrl: './userscomponent.component.html',
@@ -16,12 +17,13 @@ export class UserscomponentComponent implements OnInit {
   @ViewChild(MatPaginator) paginator!: MatPaginator;
   @ViewChild(MatSort) sort!: MatSort;
   DetailService: any;
-
+  filterControl:FormControl = new FormControl('');
   
 
   constructor(private service:DetailServiceService) { }
   getLoginvalue:any=" ";
    ngOnInit() {
+   // this.filterControl=new FormControl('');
      this.getUsersList();
    }
    getUsersList(){
@@ -35,7 +37,10 @@ export class UserscomponentComponent implements OnInit {
     })
    }
    applyFilter(event: Event) {
-    const filterValue = (event.target as HTMLInputElement).value;
+    var filterValue = this.filterControl.value;
+    
+     filterValue = (event.target as HTMLInputElement).value;
+        
     this.dataSource.filter = filterValue.trim().toLowerCase();
 
     if (this.dataSource.paginator) {

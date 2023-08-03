@@ -46,8 +46,6 @@ const routes: Routes = [
   {
    path:"Service",
    component:ServiceComponent,
-
-
   },
   {
     path:"Models",
@@ -136,6 +134,10 @@ const routes: Routes = [
   {
     path:"viewdetails",
     component:ViewDetailsComponent
+  },
+  {
+    path: 'example',
+    component: ExampleComponent,
   },
   {
     path:"OrderAcceptPage",

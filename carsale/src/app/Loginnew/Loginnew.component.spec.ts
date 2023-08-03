@@ -19,7 +19,14 @@ describe('LoginnewComponent', () => {
     TestBed.configureTestingModule({
       imports: [HttpClientModule,MatDialogModule,ReactiveFormsModule,RouterModule],
       declarations: [LoginnewComponent,HeaderComponent,FooterComponent ],
-      providers:[ActivatedRoute]
+      providers: [
+        // Provide ActivatedRoute
+        {
+          provide: ActivatedRoute,
+          useValue: {
+            /* Mock the necessary properties or methods of ActivatedRoute */
+          },
+        },]
     })
     .compileComponents();
   }));

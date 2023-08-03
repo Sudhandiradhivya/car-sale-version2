@@ -198,13 +198,7 @@ export class ImagesComponent implements OnInit {
   }
 
   removeExpiredProduct() {
-  //   const expiredProductIndex = this.models.findIndex(Total =>
-  //   this.models.find((value)=>{value.discountPrice})?true:false);
-  //   if (expiredProductIndex > -1) {
-  // this.models.splice(expiredProductIndex, 1);
-
-
-  //   }
+  
  this.models
   }
 

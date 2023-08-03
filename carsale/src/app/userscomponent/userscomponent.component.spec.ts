@@ -9,6 +9,7 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatTableModule } from '@angular/material/table';
+import { ReactiveFormsModule } from '@angular/forms';
 
 describe('UserscomponentComponent', () => {
   let component: UserscomponentComponent;
@@ -17,7 +18,7 @@ describe('UserscomponentComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [ UserscomponentComponent,AdminpagesidebarComponent],
-      imports: [HttpClientModule,MatDialogModule,MatFormFieldModule,MatPaginatorModule,MatTableModule,MatFormFieldModule], // Include HttpClientModule here
+      imports: [HttpClientModule,MatDialogModule,MatFormFieldModule,MatPaginatorModule,MatTableModule,MatFormFieldModule,ReactiveFormsModule], // Include HttpClientModule here
     })
     .compileComponents();
   }));

@@ -6,6 +6,10 @@ import { HttpClientTestingModule } from '@angular/common/http/testing';
 
 import { ExampleComponent } from './example.component';
 import { ActivatedRoute } from '@angular/router';
+import { ModelService } from '../Model.service';
+import { DetailServiceService } from '../detailService.service';
+import { SearchComponent } from '../search/search.component';
+import { FormsModule } from '@angular/forms';
 
 describe('ExampleComponent', () => {
   let component: ExampleComponent;
@@ -13,9 +17,16 @@ describe('ExampleComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ExampleComponent ],
-      imports: [HttpClientTestingModule],
-      providers:[ActivatedRoute]
+      declarations: [ ExampleComponent,SearchComponent],
+      imports: [HttpClientTestingModule,FormsModule],
+      providers: [
+        // Provide ActivatedRoute
+        {
+          provide: ActivatedRoute,
+          useValue: {
+            /* Mock the necessary properties or methods of ActivatedRoute */
+          },
+        },]
     })
     .compileComponents();
   }));

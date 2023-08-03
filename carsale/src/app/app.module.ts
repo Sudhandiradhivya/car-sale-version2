@@ -68,6 +68,7 @@ import { SearchComponent } from './search/search.component';
 import { CountdownComponent } from './countdown/countdown.component';
 import { PayComponent } from './pay/pay.component';
 import { PasswordresetComponent } from './passwordreset/passwordreset.component';
+import { RouterModule } from '@angular/router';
 @NgModule({
   declarations: [								
     AppComponent,
@@ -132,9 +133,10 @@ import { PasswordresetComponent } from './passwordreset/passwordreset.component'
     MatButtonModule,
     MatIconModule,
     MatCardModule,
-    MatDialogModule
-
-
+    MatDialogModule,
+    RouterModule
+    
+    
   ],
   providers: [DeactivateGuard,ModelGuard,ModellingService],
   bootstrap: [AppComponent]

@@ -1,5 +1,17 @@
 
-
+<style>
+    .visually-hidden {
+      position: absolute !important;
+      clip: rect(1px, 1px, 1px, 1px);
+      width: 1px !important;
+      height: 1px !important;
+      overflow: hidden;
+    }
+  </style>
+  
+  <h1 class="visually-hidden">Routing app is running!</h1>
+  
+<!-- <h1 aria-hidden="true">Routing app is running!</h1> -->
 <router-outlet></router-outlet>
 <!-- <app-details></app-details> -->
 <!-- <app-admin-header></app-admin-header> -->
@@ -9,3 +21,4 @@
 <!-- <app-example></app-example> -->
 <!-- <app-countdown></app-countdown> -->
 <!-- <app-images></app-images> -->
+
