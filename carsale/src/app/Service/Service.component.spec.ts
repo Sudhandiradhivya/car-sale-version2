@@ -4,6 +4,10 @@ import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
 
 import { ServiceComponent } from './Service.component';
+import { FooterComponent } from '../footer/footer.component';
+import { HeaderComponent } from '../header/header.component';
+import { RouterLink, RouterModule } from '@angular/router';
+
 
 describe('ServiceComponent', () => {
   let component: ServiceComponent;
@@ -11,7 +15,8 @@ describe('ServiceComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ServiceComponent ]
+      declarations: [ ServiceComponent,HeaderComponent,FooterComponent],
+      imports:[RouterModule]
     })
     .compileComponents();
   }));

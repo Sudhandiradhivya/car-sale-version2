@@ -4,6 +4,7 @@ import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
 
 import { PayComponent } from './pay.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 describe('PayComponent', () => {
   let component: PayComponent;
@@ -11,7 +12,8 @@ describe('PayComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ PayComponent ]
+      declarations: [ PayComponent ],
+      imports:[ReactiveFormsModule]
     })
     .compileComponents();
   }));

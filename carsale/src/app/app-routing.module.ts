@@ -21,7 +21,7 @@ import { ModelsregisterComponent } from './Modelsregister/Modelsregister.compone
 import { AngularRegisterComponent } from './Angular-register/Angular-register.component';
 import { DetailsComponent } from './details/details.component';
 import { AdminHomePageComponent } from './AdminHomePage/AdminHomePage.component';
-import { LoginDetailsComponent } from './loginDetails/loginDetails.component';
+//import { LoginDetailsComponent } from './loginDetails/loginDetails.component';
 import { OrderDetailsComponent } from './OrderDetails/OrderDetails.component';
 import { ServiceDetailsComponent } from './serviceDetails/serviceDetails.component';
 import { UserscomponentComponent } from './userscomponent/userscomponent.component';
@@ -105,10 +105,10 @@ const routes: Routes = [
       path: 'Admin',
       component:AdminHomePageComponent},
 
-  {
-    path:"logindetails",
-    component:LoginDetailsComponent
-  },
+  // {
+  //   path:"logindetails",
+  //   component:LoginDetailsComponent
+  // },
   {
     path:"orderdetails",
     component:OrderDetailsComponent

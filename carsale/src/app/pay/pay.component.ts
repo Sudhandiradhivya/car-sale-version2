@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
-
+import { ReactiveFormsModule } from '@angular/forms';
 @Component({
   selector: 'app-pay',
   templateUrl: './pay.component.html',

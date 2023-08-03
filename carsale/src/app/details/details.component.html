@@ -13,7 +13,7 @@
 
 
 
-<div class="container" *ngFor="let p of cars | filterCar:searchValue">
+<div class="container" *ngFor="let p of cars">
   <div class="gallery">
     <div class="name-container" [ngStyle]="{'background-color':p.name===''? '#fff':'RGB(214, 80, 118)',
     'margin-top.%':30,

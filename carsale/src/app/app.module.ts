@@ -36,7 +36,7 @@ import { AdminFooterComponent } from './admin-footer/admin-footer.component';
 // import {MatButtonModule} from '@angular/material/button';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AdminHomePageComponent } from './AdminHomePage/AdminHomePage.component';
-import { LoginDetailsComponent } from './loginDetails/loginDetails.component';
+
 import { ServiceDetailsComponent } from './serviceDetails/serviceDetails.component';
 import { OrderDetailsComponent } from './OrderDetails/OrderDetails.component';
 import { ProductComponent } from './product/product.component';
@@ -95,7 +95,7 @@ import { PasswordresetComponent } from './passwordreset/passwordreset.component'
       AdminHeaderComponent,
       AdminFooterComponent,
       AdminHomePageComponent,
-      LoginDetailsComponent,
+   
       ServiceDetailsComponent,
       OrderDetailsComponent,
       ProductComponent,

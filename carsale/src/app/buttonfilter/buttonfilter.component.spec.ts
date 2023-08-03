@@ -4,6 +4,7 @@ import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
 
 import { ButtonfilterComponent } from './buttonfilter.component';
+import { FormsModule } from '@angular/forms';
 
 describe('ButtonfilterComponent', () => {
   let component: ButtonfilterComponent;
@@ -11,7 +12,8 @@ describe('ButtonfilterComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ButtonfilterComponent ]
+      declarations: [ ButtonfilterComponent ],
+      imports:[FormsModule]
     })
     .compileComponents();
   }));

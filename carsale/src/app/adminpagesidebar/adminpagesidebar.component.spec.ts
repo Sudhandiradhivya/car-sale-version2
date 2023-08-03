@@ -4,6 +4,7 @@ import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
 
 import { AdminpagesidebarComponent } from './adminpagesidebar.component';
+import { HttpClientModule } from '@angular/common/http';
 
 describe('AdminpagesidebarComponent', () => {
   let component: AdminpagesidebarComponent;
@@ -11,6 +12,7 @@ describe('AdminpagesidebarComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
+      imports: [HttpClientModule], 
       declarations: [ AdminpagesidebarComponent ]
     })
     .compileComponents();

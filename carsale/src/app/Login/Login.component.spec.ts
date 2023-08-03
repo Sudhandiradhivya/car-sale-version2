@@ -4,6 +4,9 @@ import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
 
 import { LoginComponent } from './Login.component';
+import { HeaderComponent } from '../header/header.component';
+import { FooterComponent } from '../footer/footer.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 describe('LoginComponent', () => {
@@ -12,7 +15,8 @@ describe('LoginComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ LoginComponent ]
+      declarations: [ LoginComponent,HeaderComponent,FooterComponent ],
+      imports:[ReactiveFormsModule]
     })
     .compileComponents();
   }));

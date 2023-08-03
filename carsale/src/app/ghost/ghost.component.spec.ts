@@ -4,6 +4,10 @@ import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
 
 import { GhostComponent } from './ghost.component';
+import { MatDialogModule } from '@angular/material/dialog';
+import { HttpClientModule } from '@angular/common/http';
+import { HeaderComponent } from '../header/header.component';
+import { FooterComponent } from '../footer/footer.component';
 
 describe('GhostComponent', () => {
   let component: GhostComponent;
@@ -11,7 +15,8 @@ describe('GhostComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ GhostComponent ]
+      imports: [MatDialogModule,HttpClientModule],
+      declarations: [ GhostComponent,HeaderComponent,FooterComponent]
     })
     .compileComponents();
   }));

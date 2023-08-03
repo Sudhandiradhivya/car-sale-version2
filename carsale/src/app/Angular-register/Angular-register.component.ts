@@ -4,6 +4,7 @@ import { Router } from '@angular/router';
 import{confirmedValidator} from '../confirm.validator.ts'
 import { RegisterValidateService } from '../RegisterValidate.service';
 import { Observable } from 'rxjs';
+import { HttpClientModule } from '@angular/common/http';
 
 @Component({
   selector: 'app-Angular-register',

@@ -6,7 +6,9 @@ describe('DeactivateGuard', () => {
   let guard: DeactivateGuard;
 
   beforeEach(() => {
-    TestBed.configureTestingModule({});
+    TestBed.configureTestingModule({
+      providers: [DeactivateGuard]
+    });
     guard = TestBed.inject(DeactivateGuard);
   });
 

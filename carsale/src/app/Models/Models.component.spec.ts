@@ -4,6 +4,8 @@ import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
 
 import { ModelsComponent } from './Models.component';
+import { HttpClientModule } from '@angular/common/http';
+import { ModelService } from '../Model.service';
 
 describe('ModelsComponent', () => {
   let component: ModelsComponent;
@@ -11,7 +13,8 @@ describe('ModelsComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ModelsComponent ]
+      imports: [HttpClientModule], // Include HttpClientModule here
+      providers: [ModelService]
     })
     .compileComponents();
   }));

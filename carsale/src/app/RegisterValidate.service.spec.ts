@@ -2,10 +2,12 @@
 
 import { TestBed, async, inject } from '@angular/core/testing';
 import { RegisterValidateService } from './RegisterValidate.service';
+import { HttpClientModule } from '@angular/common/http';
 
 describe('Service: RegisterValidate', () => {
   beforeEach(() => {
     TestBed.configureTestingModule({
+      imports: [HttpClientModule], // Include HttpClientModule here
       providers: [RegisterValidateService]
     });
   });

@@ -2,8 +2,10 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
+import { HttpClientTestingModule } from '@angular/common/http/testing';
 
 import { ExampleComponent } from './example.component';
+import { ActivatedRoute } from '@angular/router';
 
 describe('ExampleComponent', () => {
   let component: ExampleComponent;
@@ -11,7 +13,9 @@ describe('ExampleComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ExampleComponent ]
+      declarations: [ ExampleComponent ],
+      imports: [HttpClientTestingModule],
+      providers:[ActivatedRoute]
     })
     .compileComponents();
   }));

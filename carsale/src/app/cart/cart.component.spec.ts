@@ -2,8 +2,10 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
-
+import { ActivatedRoute } from '@angular/router';
 import { CartComponent } from './cart.component';
+import { HeaderComponent } from '../header/header.component';
+import { FooterComponent } from '../footer/footer.component';
 
 describe('CartComponent', () => {
   let component: CartComponent;
@@ -11,7 +13,17 @@ describe('CartComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ CartComponent ]
+       // Include ActivatedRouteModule here
+      declarations: [CartComponent,HeaderComponent,FooterComponent],
+      providers: [
+        // Provide a mock or a spy for ActivatedRoute here
+        {
+          provide: ActivatedRoute,
+          useValue: {
+            // mock properties or methods here
+          }
+        }
+      ]
     })
     .compileComponents();
   }));

@@ -4,6 +4,12 @@ import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
 
 import { AngularRegisterComponent } from './Angular-register.component';
+import { HttpClientModule } from '@angular/common/http';
+import { RegisterValidateService } from '../RegisterValidate.service';
+import { FooterComponent } from '../footer/footer.component';
+import { HeaderComponent } from '../header/header.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ActivatedRoute, RouterModule } from '@angular/router';
 
 describe('AngularRegisterComponent', () => {
   let component: AngularRegisterComponent;
@@ -11,7 +17,9 @@ describe('AngularRegisterComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ AngularRegisterComponent ]
+      imports: [HttpClientModule,ReactiveFormsModule,FormsModule,RouterModule], // Include HttpClientModule here
+      declarations: [AngularRegisterComponent,HeaderComponent,FooterComponent,ActivatedRoute],
+      providers: [RegisterValidateService]
     })
     .compileComponents();
   }));

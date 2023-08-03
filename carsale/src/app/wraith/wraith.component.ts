@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { ModelsregisterComponent } from '../Modelsregister/Modelsregister.component';
 import { ServiceService } from '../service.service';
-
+import { HttpClientModule } from '@angular/common/http';
 @Component({
   selector: 'app-wraith',
   templateUrl: './wraith.component.html',

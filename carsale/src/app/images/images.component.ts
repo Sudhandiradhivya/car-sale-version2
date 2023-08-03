@@ -5,6 +5,7 @@ import {MatTableDataSource} from '@angular/material/table';
 import { DetailServiceService } from '../detailService.service';
 import {MatCardModule} from '@angular/material/card';
 import { ActivatedRoute } from '@angular/router';
+import { HttpClientModule } from '@angular/common/http';
 
 @Component({
   selector: 'app-images',

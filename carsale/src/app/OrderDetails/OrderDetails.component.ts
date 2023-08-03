@@ -7,6 +7,10 @@ import { HttpClient } from '@angular/common/http';
 import { MatDialog } from '@angular/material/dialog';
 import { ModelsregisterComponent } from '../Modelsregister/Modelsregister.component';
 import { OrderAcceptedPageComponent } from '../OrderAcceptedPage/OrderAcceptedPage.component';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatTableModule } from '@angular/material/table';
+import { MatFormField } from '@angular/material/form-field';
 import { ModellingService } from '../modelling.service';
 @Component({
   selector: 'app-OrderDetails',

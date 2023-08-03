@@ -2,6 +2,7 @@ import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { ModelService } from '../Model.service';
 import { DetailServiceService } from '../detailService.service';
+import { HttpClientTestingModule } from '@angular/common/http/testing';
 
 @Component({
   selector: 'app-example',

@@ -4,6 +4,9 @@ import {MatPaginator} from '@angular/material/paginator';
 import {MatSort} from '@angular/material/sort';
 import {MatTableDataSource} from '@angular/material/table';
 import { HttpClient } from '@angular/common/http';
+import { MatTableModule } from '@angular/material/table';
+import { CdkTableModule } from '@angular/cdk/table';
+
 import { ServiceAcceptedpageComponent } from '../serviceAcceptedpage/serviceAcceptedpage.component';
 @Component({
   selector: 'app-serviceDetails',

@@ -4,6 +4,9 @@ import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
 
 import { ImagesComponent } from './images.component';
+import { HttpClientModule } from '@angular/common/http';
+import { DetailServiceService } from '../detailService.service';
+import { ActivatedRoute } from '@angular/router';
 
 describe('ImagesComponent', () => {
   let component: ImagesComponent;
@@ -11,7 +14,9 @@ describe('ImagesComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ImagesComponent ]
+      imports: [HttpClientModule], // Include HttpClientModule here
+      declarations: [ImagesComponent],
+      providers: [DetailServiceService,ActivatedRoute]
     })
     .compileComponents();
   }));

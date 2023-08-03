@@ -4,6 +4,9 @@ import { ServiceService } from '../service.service';
 import { Router } from '@angular/router';
 import { MatDialogRef } from '@angular/material/dialog';
 import { CullinanService } from '../cullinan/cullinan.service';
+import { HttpClientModule } from '@angular/common/http';
+import { ReactiveFormsModule } from '@angular/forms';
+
 @Component({
   selector: 'app-Modelsregister',
   templateUrl: './Modelsregister.component.html',

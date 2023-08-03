@@ -4,6 +4,8 @@ import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
 
 import { HomeComponent } from './Home.component';
+import { HttpClientModule } from '@angular/common/http';
+import { ServiceService } from '../service.service';
 
 describe('HomeComponent', () => {
   let component: HomeComponent;
@@ -11,7 +13,9 @@ describe('HomeComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ HomeComponent ]
+      
+      imports: [HttpClientModule], // Include HttpClientModule here
+      providers: [ServiceService]
     })
     .compileComponents();
   }));

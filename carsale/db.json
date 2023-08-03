@@ -222,6 +222,15 @@
       "branch": "salem",
       "service": "Brakes and Brakes Repair",
       "id": 6
+    },
+    {
+      "custId": 5678,
+      "vehicleNumber": 898958,
+      "mileage": 789,
+      "email": "mythili@gmail.com",
+      "branch": "Madurai",
+      "service": "Brakes and Brakes Repair",
+      "id": 7
     }
   ],
   "adminDetails": [
@@ -295,6 +304,16 @@
       "payment": 5500000,
       "id": 7,
       "status": "Order Accepted"
+    },
+    {
+      "models": "Wraith",
+      "Title": "Mrs",
+      "fname": "Mythili",
+      "lname": "v",
+      "phonenumber": "7890876745",
+      "email": "mythili@gmail.com",
+      "payment": 520000,
+      "id": 8
     }
   ],
   "Images": [
