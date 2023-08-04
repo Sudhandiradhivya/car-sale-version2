@@ -69,6 +69,7 @@ import { CountdownComponent } from './countdown/countdown.component';
 import { PayComponent } from './pay/pay.component';
 import { PasswordresetComponent } from './passwordreset/passwordreset.component';
 import { RouterModule } from '@angular/router';
+import { AdminPageDirective } from './admin-page.directive';
 @NgModule({
   declarations: [								
     AppComponent,
@@ -115,7 +116,8 @@ import { RouterModule } from '@angular/router';
       SearchComponent,
       CountdownComponent,
       PayComponent,
-      PasswordresetComponent
+      PasswordresetComponent,
+      AdminPageDirective
    ],
   imports: [
     BrowserModule,
