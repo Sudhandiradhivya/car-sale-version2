@@ -10,6 +10,8 @@ import { OrderDetailsComponent } from './OrderDetails.component';
 import { HttpClientModule } from '@angular/common/http';
 import { MatDialog, MatDialogModule } from '@angular/material/dialog';
 import { AdminpagesidebarComponent } from '../adminpagesidebar/adminpagesidebar.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatInputModule } from '@angular/material/input';
 describe('OrderDetailsComponent', () => {
   let component: OrderDetailsComponent;
   let fixture: ComponentFixture<OrderDetailsComponent>;
@@ -21,7 +23,7 @@ describe('OrderDetailsComponent', () => {
   beforeEach(async(async () => {
     await TestBed.configureTestingModule({
       declarations: [ OrderDetailsComponent,AdminpagesidebarComponent ],
-      imports: [HttpClientModule,MatDialogModule,MatFormFieldModule,MatPaginatorModule,MatTableModule,MatFormFieldModule],
+      imports: [HttpClientModule,MatDialogModule,MatFormFieldModule,MatPaginatorModule,MatInputModule,MatTableModule,MatFormFieldModule,BrowserAnimationsModule],
       providers: [
         { provide: MatDialog, useValue: mockDialog } // Provide the mock MatDialog
       ]

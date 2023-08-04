@@ -14,9 +14,10 @@ describe('OrderAcceptedPageComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      imports: [HttpClientModule,FormsModule,ReactiveFormsModule], // Include HttpClientModule here
+      imports: [HttpClientModule,ReactiveFormsModule], // Include HttpClientModule here
       declarations: [OrderAcceptedPageComponent],
       providers: [ServiceService]
+
     })
     .compileComponents();
   }));

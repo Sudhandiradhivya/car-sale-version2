@@ -4,6 +4,7 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import { PayComponent } from '../pay/pay.component';
 import { MatDialog } from '@angular/material/dialog';
 import { ModellingService } from '../modelling.service';
+import { FormControl } from '@angular/forms';
 @Component({
   selector: 'app-view-details',
   templateUrl: './view-details.component.html',
@@ -21,11 +22,13 @@ getlogged:any="";
 acceptdetails:any="";
 payment:any="";
 getServices:any="";
+// filterControl:FormControl = new FormControl('');
+// filterValue = this.filterControl.value;
+
   ngOnInit() {
     const logged=sessionStorage.getItem('user');
     if(logged){
     this.getlogged=JSON.parse(logged);
-
     }
 
 

@@ -29,7 +29,7 @@ retUrl:any;
   generate:any='';
 
   ngOnInit() {
-    this.generate=this.detailService.billGenerate
+    this.generate = this.detailService.billGenerate || {};
     this.http.get<any>("http://localhost:3000/Modelsregister").subscribe
   }
   formRegister() {

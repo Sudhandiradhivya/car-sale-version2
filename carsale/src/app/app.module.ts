@@ -136,9 +136,9 @@ import { RouterModule } from '@angular/router';
     MatIconModule,
     MatCardModule,
     MatDialogModule,
-    RouterModule
-    
-    
+    RouterModule,
+   BrowserAnimationsModule
+ 
   ],
   providers: [DeactivateGuard,ModelGuard,ModellingService],
   bootstrap: [AppComponent]

@@ -10,6 +10,9 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatTableModule } from '@angular/material/table';
 import { ReactiveFormsModule } from '@angular/forms';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatInputModule } from '@angular/material/input';
+import { CdkTableModule } from '@angular/cdk/table';
 
 describe('UserscomponentComponent', () => {
   let component: UserscomponentComponent;
@@ -18,7 +21,15 @@ describe('UserscomponentComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [ UserscomponentComponent,AdminpagesidebarComponent],
-      imports: [HttpClientModule,MatDialogModule,MatFormFieldModule,MatPaginatorModule,MatTableModule,MatFormFieldModule,ReactiveFormsModule], // Include HttpClientModule here
+      imports: [HttpClientModule,
+        MatTableModule, 
+        CdkTableModule,
+        MatFormFieldModule,
+        MatInputModule,
+        BrowserAnimationsModule,
+       MatDialogModule,MatFormFieldModule,MatPaginatorModule,MatTableModule,MatFormFieldModule],
+        providers:[]
+         // Include HttpClientModule here
     })
     .compileComponents();
   }));

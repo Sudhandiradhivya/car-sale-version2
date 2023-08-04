@@ -17,7 +17,7 @@ export class UserscomponentComponent implements OnInit {
   @ViewChild(MatPaginator) paginator!: MatPaginator;
   @ViewChild(MatSort) sort!: MatSort;
   DetailService: any;
-  filterControl:FormControl = new FormControl('');
+ // filterControl:FormControl = new FormControl('');
   
 
   constructor(private service:DetailServiceService) { }
@@ -37,9 +37,9 @@ export class UserscomponentComponent implements OnInit {
     })
    }
    applyFilter(event: Event) {
-    var filterValue = this.filterControl.value;
+   // var filterValue = this.filterControl.value;
     
-     filterValue = (event.target as HTMLInputElement).value;
+    const filterValue = (event.target as HTMLInputElement).value;
         
     this.dataSource.filter = filterValue.trim().toLowerCase();
 

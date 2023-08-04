@@ -11,7 +11,7 @@ export class CartComponent implements OnInit {
   constructor(private activatedRoute:ActivatedRoute) { }
 
   ngOnInit() {
-    this.activatedRoute.fragment.subscribe((value)=>{
+    this.activatedRoute.fragment?.subscribe((value)=>{
       console.log(value);
      this.jumpTo(value);
     });

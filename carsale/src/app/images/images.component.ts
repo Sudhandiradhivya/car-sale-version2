@@ -31,7 +31,7 @@ export class ImagesComponent implements OnInit {
      this.getNewsList();
      this.getReviewList();
      this.startTimer();
-     this.activateRoute.fragment.subscribe((value)=>{
+     this.activateRoute.fragment?.subscribe((value)=>{
           console.log(value);
           this.jumpTo(value);
      });

@@ -11,6 +11,8 @@ import { AdminpagesidebarComponent } from '../adminpagesidebar/adminpagesidebar.
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatInputModule } from '@angular/material/input';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 describe('ServiceDetailsComponent', () => {
   let component: ServiceDetailsComponent;
   let fixture: ComponentFixture<ServiceDetailsComponent>;
@@ -20,12 +22,14 @@ describe('ServiceDetailsComponent', () => {
       declarations: [ServiceDetailsComponent,AdminpagesidebarComponent],
       imports: [
         HttpClientModule,
-        MatTableModule, // Include MatTableModule
+        MatTableModule, 
         CdkTableModule,
         MatFormFieldModule,
+        MatInputModule,
+        BrowserAnimationsModule,
        MatDialogModule,MatFormFieldModule,MatPaginatorModule,MatTableModule,MatFormFieldModule
-         // Include CdkTableModule
-      ], // Include HttpClientModule here
+         
+      ],
       providers: []
       
     })

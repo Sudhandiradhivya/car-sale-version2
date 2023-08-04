@@ -1,7 +1,7 @@
 <div class="totalcontent">
       <app-adminpagesidebar></app-adminpagesidebar>
   <div class="main-body">
-    <mat-form-field [formControl]="filterControl">
+    <mat-form-field>
   <mat-label>Filter</mat-label>
   <input matInput (keyup)="applyFilter($event)" placeholder="Ex. Mia" #input>
     </mat-form-field>

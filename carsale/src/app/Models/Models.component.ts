@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ModelService } from '../Model.service';
 import { ServiceService } from '../service.service';
 import { modelsImages } from 'src/environments/environment.development';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-Models',
@@ -12,7 +13,7 @@ export class ModelsComponent implements OnInit {
 
 
   getProduct:any;
-  constructor(private service:ModelService,private carModel:ServiceService) {
+  constructor(private service:ModelService,private carModel:ServiceService,private route: ActivatedRoute) {
     this.service.getModel().subscribe(data=>{
       this.getProduct=data;
     });
