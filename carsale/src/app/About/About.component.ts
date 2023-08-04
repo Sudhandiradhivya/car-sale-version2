@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import {HttpClientModule} from'@angular/common/http';
+import { environment } from 'src/environments/environment.development';
 @Component({
   selector: 'app-About',
   templateUrl: './About.component.html',
