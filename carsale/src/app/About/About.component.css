@@ -114,8 +114,8 @@ table{
 }
 .overlay{
   position: absolute;
-  top: 290%;
-  left: 30%;
+  top: 250%;
+  left: 20%;
   right: 30%;
   display: flex;
   /* background-color; */

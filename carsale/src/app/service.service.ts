@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 //import { environment } from 'src/environments/environment';
-import { environment} from 'src/environments/environment.development';
+import { environment, serviceServiceImages} from 'src/environments/environment.development';
 @Injectable({
   providedIn: 'root'
 })
@@ -22,19 +22,19 @@ getCarModels(){
   return this.http.get(this.apiUrl);
 }
 getGhostModels(){
-   return this.http.get("http://localhost:3000/Ghostmodels");
+   return this.http.get(serviceServiceImages.GhostModels);
 }
 getCullinanModels(){
-  return this.http.get("http://localhost:3000/Cullinanmodels");
+  return this.http.get(serviceServiceImages.CullinanModels);
 }
 getPhantomModels(){
-  return this.http.get("http://localhost:3000/PhantomModels");
+  return this.http.get(serviceServiceImages.PhantomModels);
 }
 getWraithModels(){
-  return this.http.get(" http://localhost:3000/WraithModels");
+  return this.http.get(serviceServiceImages.WraithModels);
 }
 getDawnModels(){
-  return this.http.get("http://localhost:3000/DawnModels");
+  return this.http.get(serviceServiceImages.DawnModels);
 }
 content:any='';
 model:any='';

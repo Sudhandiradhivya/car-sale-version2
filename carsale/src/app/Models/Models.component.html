@@ -29,33 +29,18 @@
       </p>
       <h4 class="list">Rolls-Royce Cars Price List in India</h4>
       <p class="paragraph">Rolls-Royce cars price range is Rs 6.22 Cr to Rs 10.48 Cr. Top 3 Rolls-Royce car model prices are Rolls-Royce Cullinan price (Rs. 6.95 Cr), Rolls-Royce Phantom price (Rs. 8.99 - 10.48 Cr), Rolls-Royce Ghost price (Rs. 6.95 - 7.95 Cr) . Check out all models April 2023 price below.</p>
+      
       <table>
-        <th>Model</th>
+        <tr>
+          <th>Model</th>
         <th>Showroom Price</th>
-        <tr>
-          <td>Rolls-Royce Cullinan</td>
-          <td>&#8377; 6.95 Cr*</td>
         </tr>
-        <tr>
-          <td>Rolls-Royce Phantom</td>
-          <td>&#8377; 8.99 - 10.48 Cr*</td>
+        <tr style="text-align: center;" *ngFor="let model of models">
+      
+          <td>{{model.name}}</td>
+          <td>{{model.price}}</td>
         </tr>
-        <tr><td>Rolls-Royce Ghost</td>
-          <td>&#8377; 6.95 - 7.95 Cr*</td>
-        </tr>
-        <tr>
-          <td>Rolls Royce Wraith</td>
-          <td>&#8377; 6.22 - 7.21 Cr*</td>
-        </tr>
-        <tr>
-          <td>Rolls Royce Dawn</td>
-          <td>&#8377; 7.06 - 7.64 Cr*</td>
-        </tr>
-        <tr>
-          <td>Rolls-Royce Cullinan</td>
-          <td>&#8377; 6.95 Cr*</td>
-        </tr>
-      </table>
+    </table>
     </div>
   </div>
 
@@ -63,28 +48,9 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <div class="car-container">
   <div class="box" id="1">
-    <img src="../../assets/ghost.avif" width="100%" height="130px">
+    <img [src]="modelsImg.modelsImg1" width="100%" height="130px">
     <h3>{{name1}}</h3>
     <div class="stars-rating">
         <i class="fas fa-star"></i>
@@ -98,7 +64,7 @@
   </div>
 
    <div class="box1" id="2">
-    <img src="../../assets/c.jpg" width="100%" height="130px">
+    <img [src]="modelsImg.modelsImg2" width="100%" height="130px">
     <h3>{{name2}}</h3>
     <div class="stars-rating">
         <i class="fas fa-star"></i>
@@ -110,8 +76,10 @@
     <span>&#8377;6.95Cr</span><br>
     <a [routerLink]="'/Cullinan'" class="btn">View details</a>
    </div>
+
+
    <div class="box" id="3">
-    <img src="../../assets/wra1.jpg" width="100%" height="130px" >
+    <img [src]="modelsImg.modelsImg3" width="100%" height="130px" >
 
     <h3>{{name3}}</h3>
    <div class="stars-rating">
@@ -124,10 +92,10 @@
     <span>&#8377;5.50Cr</span><br>
     <a [routerLink]="'/Wraith'" class="btn">View details</a>
    </div>
+
+
    <div class="box1" id="4">
-
-
-    <img src="../../assets/pha1.jpg" width="100%" height="130px">
+    <img [src]="modelsImg.modelsImg4" width="100%" height="130px">
     <h3>{{name4}}</h3>
     <div class="stars-rating">
         <i class="fas fa-star"></i>
@@ -141,8 +109,10 @@
 
     <a [routerLink]="'/Phantom'" class="btn">View details</a>
    </div>
+
+
    <div class="box" id="5">
-    <img src="../../assets/daw.jpg" width="100%" height="130px">
+    <img [src]="modelsImg.modelsImg5" width="100%" height="130px">
 
     <h3>{{name5}}</h3>
 
@@ -163,7 +133,7 @@
 <div class="highlights">
   <h4 class="list">Key Highlights Of Rolls-Royce</h4>
 
-  <table>
+  <!-- <table>
 
     <tr>
       <td>Popular Models</td>
@@ -188,6 +158,18 @@
       <td>Service Centers</td>
       <td>2</td>
     </tr>
-  </table>
+  </table> -->
+
+  <table>
+    <!-- <tr>
+      <td>Popular Models</td>
+    <td>Cullinan, Phantom, Ghost, Rolls Royce Wraith, Rolls Royce Dawn</td>
+    </tr> -->
+    <tr style="text-align: center;" *ngFor="let sepecifications of specification">
+  
+      <td>{{sepecifications.name}}</td>
+      <td>{{sepecifications.value}}</td>
+    </tr>
+</table>
 </div>
 <app-footer></app-footer>

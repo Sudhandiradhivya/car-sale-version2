@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { ModellingService } from '../modelling.service';
+import { headerImages } from 'src/environments/environment.development';
 
 
 @Component({
@@ -20,6 +21,8 @@ export class HeaderComponent implements OnInit {
 
 
   }
+
+headerImg:any=headerImages;
 
   logout(){
     this.modellingService.userlogin=false;

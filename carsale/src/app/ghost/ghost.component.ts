@@ -3,6 +3,7 @@ import {MatDialog, MAT_DIALOG_DATA} from '@angular/material/dialog';
 import { ModelsregisterComponent } from '../Modelsregister/Modelsregister.component';
 import { ServiceService } from '../service.service';
 import { HttpClientModule } from '@angular/common/http';
+import { ghostImages } from 'src/environments/environment.development';
 @Component({
   selector: 'app-ghost',
   templateUrl: './ghost.component.html',
@@ -22,17 +23,14 @@ carModel:any;
 
  });
     // this.offerStatus=localStorage.getItem('offerstatus')==='true';
-
-
-
-
    }
-
-
 
   ngOnInit() {
 
   }
+
+ghostImg:any=ghostImages;
+
   url: string = "../../assets/g1-b.png";
   imageChange(event: any){
       this.url = event.target.src;

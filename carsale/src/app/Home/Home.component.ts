@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ServiceService } from '../service.service';
 import { HttpClientModule } from '@angular/common/http';
+import { homeImages } from 'src/environments/environment.development';
 
 @Component({
   selector: 'app-Home',
@@ -21,6 +22,8 @@ export class HomeComponent implements OnInit {
 
   ngOnInit() {
   }
+homeImg:any=homeImages;
+
   popup:boolean=true;
   closepop(){
     clearInterval(this.interval);

@@ -1,8 +1,8 @@
 <app-header></app-header>
 <div class="slider">
   <div class="contents-left">
-    <img src="../../assets/car11.jpg" id="subDivImg1" width="70%">
-    <img src="../../assets/car12.jpg" id="subDivImg2" width="30%" style="margin-left: -3%; margin-top: -3%;">
+    <img [src]="aboutImg.subDivImg1" id="subDivImg1" width="70%">
+    <img [src]="aboutImg.subDivImg2" id="subDivImg2" width="30%" style="margin-left: -3%; margin-top: -3%;">
   </div>
   <div class="contents-right">
     <h2 style="font-family: poppins;">THE HISTORY <br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;<br>&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;OF <br><br>ROLLS-ROYCE</h2>
@@ -12,7 +12,7 @@
 
 <div class="container">
   <div class="image">
-    <img src="../../assets/Rolls Royce Logo.png">
+    <img [src]="aboutImg. roycelogo2">
   </div>
   <div class="content1">
     <p style="font-family: poppins;font-size: 18px;"><b>Rolls-Royce </b>Motor Cars Limited is a British luxury automobile maker which has operated as a wholly owned
@@ -50,88 +50,20 @@
     </p>
     </div>
     <div class="image1">
-      <img src="../../assets/image2.jpg">
+      <img [src]="aboutImg.roycelogo1">
     </div>
 </div>
 <table>
   <tr>
     <th>Calender year</th>
     <th>Total sales</th>
-  </tr><br>
-  <tr style="text-align: center;">
-
-    <td>2005</td>
-    <td>796</td>
-  </tr><br>
-  <tr style="text-align: center;">
-
-    <td>2006</td>
-    <td>805</td>
-  </tr><br>
-  <tr style="text-align: center;">
-    <td>2007</td>
-    <td>1010</td>
-  </tr><br>
-  <tr style="text-align: center;">
-    <td>2008</td>
-    <td>1212</td>
-  </tr><br>
-  <tr style="text-align: center;">
-    <td>2009</td>
-    <td>1002</td>
-  </tr><br>
-  <tr style="text-align: center;">
-    <td>2010</td>
-    <td>2711</td>
-  </tr><br>
-  <tr style="text-align: center;">
-    <td>2011</td>
-    <td>3538</td>
-  </tr><br>
-  <tr style="text-align: center;">
-    <td>2012</td>
-    <td>3575</td>
-  </tr><br>
-  <tr style="text-align: center;">
-    <td>2013</td>
-    <td>3630</td>
-  </tr><br>
-  <tr style="text-align: center;">
-    <td>2014</td>
-    <td>4063</td>
-  </tr><br>
-  <tr style="text-align: center;">
-    <td>2015</td>
-    <td>3785</td>
-  </tr><br>
-  <tr style="text-align: center;">
-    <td>2016</td>
-    <td>4011</td>
-  </tr><br>
-  <tr style="text-align: center;">
-    <td>2017</td>
-    <td>3362</td>
-  </tr><br>
-  <tr style="text-align: center;">
-    <td>2018</td>
-    <td>4017</td>
-  </tr><br>
-  <tr style="text-align: center;">
-    <td>2019</td>
-    <td>5152</td>
-  </tr><br>
-  <tr style="text-align: center;">
-    <td>2020</td>
-    <td>3756</td>
-  </tr><br>
-  <tr style="text-align: center;">
-    <td>2021</td>
-    <td>5586</td>
-  </tr><br>
-  <tr style="text-align: center;">
-    <td>2022</td>
-    <td>6021</td>
   </tr>
+  <tr style="text-align: center;" *ngFor="let cardetail of carDetails">
+
+    <td>{{cardetail.th1}}</td>
+    <td>{{cardetail.th2}}</td>
+  </tr>
+ 
 </table>
 <div class="btn" style="font-family: poppins;">
  Do you want more datails

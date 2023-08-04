@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { RouterLink } from '@angular/router';
+import { serviceImages } from 'src/environments/environment.development';
 
 @Component({
   selector: 'app-Service',
@@ -12,6 +13,6 @@ export class ServiceComponent implements OnInit {
 
   ngOnInit() {
   }
-
+serviceimages:any=serviceImages;
   
 }

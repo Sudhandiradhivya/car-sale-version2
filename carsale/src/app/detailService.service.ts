@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import {HttpClient} from '@angular/common/http'
 import { Observable } from 'rxjs';
+import { detailsImages } from 'src/environments/environment.development';
 
 @Injectable({
   providedIn: 'root'
@@ -37,13 +38,13 @@ deleteService(id:number):Observable<any>{
   return this.http.delete(`http://localhost:3000/serviceDetails/${id}`);
 }
 getImagesList():Observable<any>{
- return this.http.get(' http://localhost:3000/Images');
+ return this.http.get('http://localhost:3000/Images');
 }
 getNewsList():Observable<any>{
-       return this.http.get(' http://localhost:3000/News');
+       return this.http.get(detailsImages.news);
 }
 getReviewList():Observable<any>{
- return this.http.get(' http://localhost:3000/Reviews ');
+ return this.http.get(detailsImages.reviews);
 }
 getExampleImage():Observable<any>{
   return this.http.get(' http://localhost:3000/ExampleImages');
