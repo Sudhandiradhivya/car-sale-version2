@@ -12,7 +12,7 @@
     </div>
     <div class="specification">
       <div class="left">
-        <img src="../../assets/d11.jpg">
+        <img [src]="dawnImg.dawnImg1">
       </div>
       <div class="right">
         <h3>Rolls-Royce Dawn</h3>
@@ -36,18 +36,14 @@
 
        <h2>Dawn Specs, Features and Price</h2>
 
-      <p>The Rolls-Royce Rolls Royce Dawn has 1 Petrol Engine on offer. The Petrol engine is 6598 cc . It is available with Automatic transmission.Depending upon the variant and fuel type the Rolls Royce Dawn has a mileage of . The Rolls Royce Dawn is a 4 seater 12 cylinder car and has length of 5285 mm, width of 1947mm and a wheelbase of 3112mm.
+      <p>{{dawnImg.paragraph7}}
       </p>
     </div>
   <div class="key">
       <h2>Key Specifications of Rolls-Royce Dawn</h2>
     <div class="whole">
       <div class="left-content">
-       <!-- <div class="keys">
-          <div ><p>ARAI Mileage</p></div>
-          <div ><span>9.8 kmpl</span></div>
-       </div> -->
-
+    
       <div class="keys">
         <p>Engine Displacement (cc)</p>
         <span>6598</span>
@@ -70,7 +66,7 @@
          <p> Body Type</p>
          <span>Convertible</span>
       </div>
-      <!-- <div class="underline4"></div> -->
+     
     </div>
 
 
@@ -205,40 +201,40 @@
 <div class="all-images">
 <div class="interior-images">
   <div class="item-1">
-    <img src="../../assets/d11.jpg">
+    <img [src]="dawnImg.exteriorImg1">
   </div>
   <div class="item-2">
-    <img src="../../assets/d12.jpg">
+    <img [src]="dawnImg.exteriorImg2">
   </div>
   <div class="item-3">
-    <img src="../../assets/d13.jpg">
+    <img [src]="dawnImg.exteriorImg3">
   </div>
   <div class="item-4">
-    <img src="../../assets/d14.jpg">
+    <img [src]="dawnImg.exteriorImg4">
   </div>
   <div class="item-5">
-    <img src="../../assets/d15.jpg">
+    <img [src]="dawnImg.exteriorImg5">
   </div>
   <div class="item-6">
-    <img src="../../assets/d16.jpg">
+    <img [src]="dawnImg.exteriorImg6">
   </div>
   <div class="item-7">
-    <img src="../../assets/d17.jpg">
+    <img [src]="dawnImg.exteriorImg7">
   </div>
   <div class="item-8">
-    <img src="../../assets/d18.jpg">
+    <img [src]="dawnImg.exteriorImg8">
   </div>
   <div class="item-9">
-    <img src="../../assets/d19.jpg">
+    <img [src]="dawnImg.exteriorImg9">
   </div>
   <div class="item-10">
-    <img src="../../assets/d20.jpg">
+    <img [src]="dawnImg.exteriorImg10">
   </div>
   <div class="item-11">
-    <img src="../../assets/d21.jpg">
+    <img [src]="dawnImg.exteriorImg11">
   </div>
   <div class="item-12">
-    <img src="../../assets/d22.jpg">
+    <img [src]="dawnImg.exteriorImg12">
   </div>
 </div>
 </div>
@@ -247,49 +243,37 @@
 
 <div class="exterior-images">
   <div class="item-1">
-    <img src="../../assets/d23.jpg">
+    <img [src]="dawnImg.inteiorImg1">
   </div>
   <div class="item-2">
-    <img src="../../assets/d24.jpg">
+    <img [src]="dawnImg.inteiorImg2">
   </div>
   <div class="item-3">
-    <img src="../../assets/d25.jpg">
+    <img [src]="dawnImg.inteiorImg3">
   </div>
   <div class="item-4">
-    <img src="../../assets/d26.jpg">
+    <img [src]="dawnImg.inteiorImg4">
   </div>
   <div class="item-5">
-    <img src="../../assets/d27.jpg">
+    <img [src]="dawnImg.inteiorImg5">
   </div>
   <div class="item-6">
-    <img src="../../assets/d28.jpg">
+    <img [src]="dawnImg.inteiorImg6">
   </div>
   <div class="item-7">
-    <img src="../../assets/d32.jpg">
+    <img [src]="dawnImg.inteiorImg7">
   </div>
   <div class="item-8">
-    <img src="../../assets/d30.jpg">
+    <img [src]="dawnImg.inteiorImg8">
   </div>
   <div class="item-9">
-    <img src="../../assets/d31.jpg">
+    <img [src]="dawnImg.inteiorImg9">
   </div>
 
 </div>
 </div>
 
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -352,9 +336,9 @@
             <i class='far'>&#xf005;</i>
         </div>
         <span>Super Comfort</span><br>
-       <p>This is a super luxurious car. It has super comfort. Wonderful and powerful car. Its interior design is awesome.</p>
+       <p>{{dawnImg.paragraph4}}</p>
 <h4 class="review2">By Rohit Mall<br>
-  <small> On: Jun 11, 2022 | 69 Views</small></h4>
+  <small> {{dawnImg.date1}}</small></h4>
       </div>
 
     <div class="box">
@@ -367,9 +351,9 @@
           <i class='far'>&#xf005;</i>
       </div>
       <span>Great car</span><br>
-     <p> Great response from my neighbors as the looks of the car are amazing.</p>
+     <p>{{dawnImg.paragraph5}}</p>
      <h4 class="review1">By Maha Lakshmi<br>
-      <small>On: Dec 29, 2019 | 60 Views</small></h4>
+      <small>{{dawnImg.date2}}</small></h4>
   </div>
 
   <div class="box">
@@ -382,9 +366,9 @@
         <i class="fas fa-star-half-alt"></i>
     </div>
     <span>Rolls Royce Is The Best Car In This Price Segment</span><br>
-   <p>It's the best car according to this price segment. Its comfort is so nice.</p>
+   <p>{{dawnImg.paragraph6}}</p>
    <h4 class="review3">By Jatin Thakur<br>
-    <small>On: May 15, 2022 | 75 Views</small></h4>
+    <small>{{dawnImg.date3}}</small></h4>
 </div>
     </div>
 
@@ -408,31 +392,32 @@
 <div class="groups">
   <div class="containers">
     <div class="box-top">
-        <img src="../../assets/cq5dam.web.1920.webp">
+        <img [src]="dawnImg.footerImg1">
     </div>
   <div class="box-bottom">
     <h1>BEGIN YOUR DAWN COMMISSION</h1>
-    <P>Dawn Drophead Coupe delivers open-top driving as never experienced before.Take the first steps towards your personal commission.</P>
+    <P>
+      {{dawnImg.paragraph1}}
+    </P>
   </div>
   </div>
   <div class="containers">
   <div class="box-top">
-      <img src="../../assets/cunew10.jpg" id="image">
+      <img [src]="dawnImg.footerImg2" id="image">
   </div>
   <div class="box-bottom">
     <h1>DISCOVER BESPOKE</h1>
-        <P>Choose from our exclisive collections or collaborate with our craftspeople and designers
-          to create a Rolls-Royce wholly unique to you. This is Rolls-Royce Bespoke.
+        <P>{{dawnImg.paragraph2}}
         </P>
   </div>
   </div>
   <div class="containers">
   <div class="box-top">
-      <img src="../../assets/cq5dam.web.1920 (3).webp" >
+      <img [src]="dawnImg.footerImg3">
   </div>
   <div class="box-bottom">
     <h1>DAWN SILVER BULLET</h1>
-      <P>Inspired by the spirit of the Brewster Playboy Roadsters of the 1920s, Dawn Silver Bullet is a modern interpretation of the heady, irreverrent attitude of that decade.
+      <P>{{dawnImg.paragraph3}}
       </P>
   </div>
   </div>

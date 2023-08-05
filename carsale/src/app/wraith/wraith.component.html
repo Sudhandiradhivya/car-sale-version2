@@ -10,7 +10,7 @@
     </div>
     <div class="specification">
       <div class="left">
-        <img src="../../assets/w71.jpg">
+        <img [src]="wraithImg.wraithImg1">
       </div>
       <div class="right">
         <h3>Rolls-Royce Wraith</h3>
@@ -177,40 +177,40 @@
 <div class="all-images">
 <div class="interior-images">
   <div class="item-1">
-    <img src="../../assets/w71.jpg">
+    <img [src]="wraithImg.exteriorImg1">
   </div>
   <div class="item-2">
-    <img src="../../assets/w72.jpg">
+    <img [src]="wraithImg.exteriorImg2">
   </div>
   <div class="item-3">
-    <img src="../../assets/w73.jpg">
+    <img [src]="wraithImg.exteriorImg3">
   </div>
   <div class="item-4">
-    <img src="../../assets/w74.jpg">
+    <img [src]="wraithImg.exteriorImg4">
   </div>
   <div class="item-5">
-    <img src="../../assets/w75.jpg">
+    <img [src]="wraithImg.exteriorImg5">
   </div>
   <div class="item-6">
-    <img src="../../assets/w76.jpg">
+    <img [src]="wraithImg.exteriorImg6">
   </div>
   <div class="item-7">
-    <img src="../../assets/w77.jpg">
+    <img [src]="wraithImg.exteriorImg7">
   </div>
   <div class="item-8">
-    <img src="../../assets/w78.jpg">
+    <img [src]="wraithImg.exteriorImg8">
   </div>
   <div class="item-9">
-    <img src="../../assets/w79.jpg">
+    <img [src]="wraithImg.exteriorImg9">
   </div>
   <div class="item-10">
-    <img src="../../assets/w80.jpg">
+    <img [src]="wraithImg.exteriorImg10">
   </div>
   <div class="item-11">
-    <img src="../../assets/w81.jpg">
+    <img [src]="wraithImg.exteriorImg11">
   </div>
   <div class="item-12">
-    <img src="../../assets/w82.jpg">
+    <img [src]="wraithImg.exteriorImg12">
   </div>
 </div>
 </div>
@@ -219,50 +219,37 @@
 
 <div class="exterior-images">
   <div class="item-1">
-    <img src="../../assets/w83.jpg">
+    <img [src]="wraithImg.inteiorImg1">
   </div>
   <div class="item-2">
-    <img src="../../assets/w84.jpg">
+    <img [src]="wraithImg.inteiorImg2">
   </div>
   <div class="item-3">
-    <img src="../../assets/w85.jpg">
+    <img [src]="wraithImg.inteiorImg3">
   </div>
   <div class="item-4">
-    <img src="../../assets/w86.jpg">
+    <img [src]="wraithImg.inteiorImg4">
   </div>
   <div class="item-5">
-    <img src="../../assets/w87.jpg">
+    <img [src]="wraithImg.inteiorImg5">
   </div>
   <div class="item-6">
-    <img src="../../assets/w89.jpg">
+    <img [src]="wraithImg.inteiorImg6">
   </div>
   <div class="item-7">
-    <img src="../../assets/w90.jpg">
+    <img [src]="wraithImg.inteiorImg7">
   </div>
   <div class="item-8">
-    <img src="../../assets/w91.jpg">
+    <img [src]="wraithImg.inteiorImg8">
   </div>
   <div class="item-9">
-    <img src="../../assets/w92.jpg">
+    <img [src]="wraithImg.inteiorImg9">
   </div>
 
 </div>
 </div>
 
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -307,78 +294,6 @@
       </div>
 
 
-        <!-- <div class="card">
-            <div class="card-main">
-           <div class="discount">-20%</div>
-           <div class="order order-color"><a (click)="openDialog()"  class="preorder">Order</a></div>
-           <div class="product-container">
-            <div class="p" (mouseover)="Change($event)"><img src="../../assets/wr4-b.jpg" alt="product"></div>
-            <div class="p" (mouseover)="Change($event)"><img src="../../assets/wr5-b.webp"  alt="product"></div>
-            <div class="p" (mouseover)="Change($event)"><img src="../../assets/wr6-b.jpeg" alt="product"></div>
-           </div>
-           <div class="image-container">
-            <img src="{{image}}" alt="Product">
-           </div>
-
-        <div class="cart-line"></div>
-              <div class="cart-item">
-                    <ul>
-                      <li><a href=""><i class="fa fa-shopping-basket"></i></a></li>
-                      <li><a href=""><i class="fa fa-heart"></i></a></li>
-                      <li><a href=""><i class="fa fa-search"></i></a></li>
-                    </ul>
-              </div>
-            </div>
-
-      <div class="card-content">
-          <a href="">Rolls-Royce Wraith</a>
-          <div class="rating" style="color: rgb(255, 136, 0);" >
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class='far'>&#xf005;</i>
-            <i class='far'>&#xf005;</i>
-          </div>
-        <p><span class="money">$67Cr</span><span class="price-old">$87Cr</span></p>
-            </div>
-        </div>
-
-
-        <div class="card">
-            <div class="card-main">
-           <div class="discount">-30%</div>
-           <div class="order order-color"><a (click)="openDialog()" class="preorder">Order</a></div>
-           <div class="product-container">
-            <div class="p" (mouseover)="ghost($event)"><img src="../../assets/wr7-y.webp" alt="product"></div>
-            <div class="p" (mouseover)="ghost($event)"><img src="../../assets/wr8-y.jpg"  alt="product"></div>
-            <div class="p" (mouseover)="ghost($event)"><img src="../../assets/wr9-y.jpg" alt="product"></div>
-           </div>
-           <div class="image-container">
-            <img src="{{content}}" alt="Product">
-           </div>
-
-        <div class="cart-line"></div>
-              <div class="cart-item">
-                    <ul>
-                      <li><a href=""><i class="fa fa-shopping-basket"></i></a></li>
-                      <li><a href=""><i class="fa fa-heart"></i></a></li>
-                      <li><a href=""><i class="fa fa-search"></i></a></li>
-                    </ul>
-              </div>
-            </div>
-
-      <div class="card-content">
-          <a href="">Rolls-Royce Wraith</a>
-          <div class="rating" style="color: rgb(255, 136, 0);" >
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class='far'>&#xf005;</i>
-            <i class='far'>&#xf005;</i>
-          </div>
-        <p><span class="money">$89Cr</span><span class="price-old">$99Cr</span></p>
-            </div>
-        </div> -->
       </div>
     </div>
   </div>
@@ -399,11 +314,11 @@
             <i class='far'>&#xf005;</i>
         </div>
         <span>Comfortable</span><br>
-       <p>This car is very comfortable and very very wonderful. My favorite car is this.
-         So, I love this car. I am also providing to all the richest people who can buy this car.I am very poor so I have not bought this car. Thank you. Rolls-Royce team.</p>
+       <p>
+        {{wraithImg.paragraph4}}
+       </p>
 <h4 class="review2">By Anirban Halder<br>
-  <small>
-    On: Jan 17, 2023 | 93 Views</small></h4>
+  <small>{{wraithImg.date1}}</small></h4>
       </div>
 
     <div class="box">
@@ -416,9 +331,11 @@
           <i class='far'>&#xf005;</i>
       </div>
       <span>RR Wraith Fully Safest And Comfortable</span><br>
-     <p>Very comfortable car. Features wise it's awesome. Better performance. Full safety car. Drive this car you feel very comfortable than other cars. </p>
+     <p>
+      {{wraithImg.paragraph5}}
+     </p>
      <h4 class="review1">By VishalSharma<br>
-      <small>On: May 13, 2022 | 97 Views</small></h4>
+      <small>{{wraithImg.date2}}</small></h4>
   </div>
 
   <div class="box">
@@ -431,9 +348,11 @@
         <i class="fas fa-star-half-alt"></i>
     </div>
     <span>Amazing Car</span><br>
-   <p>So Comfortable and Safest car. No Questions for This Car. No words can explain it completely. Wow, It's Amazing.</p>
+   <p>
+    {{wraithImg.paragraph6}}
+   </p>
    <h4 class="review3">By Ratna Nath<br>
-    <small>On: Jan 19, 2023 | 324 Views</small></h4>
+    <small>{{wraithImg.date3}}</small></h4>
 </div>
     </div>
 
@@ -447,32 +366,31 @@
 <div class="groups">
   <div class="containers">
     <div class="box-top">
-        <img src="../../assets/wranew15.webp">
+        <img [src]="wraithImg.footerImg1">
     </div>
   <div class="box-bottom">
     <h1>BLACK BADGE WRAITH</h1>
-    <P>Power is unleashed with Black Badge Wraith. The boldest edition of the world's most powerful Rolls-Royce is sculpted for those who dare to defy convention.
+    <P>{{wraithImg.paragraph1}}
     </P>
   </div>
   </div>
   <div class="containers">
   <div class="box-top">
-      <img src="../../assets/wranew11.webp" id="image">
+      <img [src]="wraithImg.footerImg2" id="image">
   </div>
   <div class="box-bottom">
     <h1>DISCOVER BESPOKE</h1>
-        <P>Choose from our exclisive collections or collaborate with our craftspeople and designers
-          to create a Rolls-Royce wholly unique to you. This is Rolls-Royce Bespoke.
+        <P>{{wraithImg.paragraph2}}
         </P>
   </div>
   </div>
   <div class="containers">
   <div class="box-top">
-      <img src="../../assets/wranew2.jpg" >
+      <img [src]="wraithImg.footerImg3">
   </div>
   <div class="box-bottom">
     <h1>DISCOVER WRAITH KRYPTOS</h1>
-    <P>Presenting Wraith Kryptos-a limited, bespoke collection inspired by the clandestine world of cryptography.
+    <P>{{wraithImg.paragraph3}}
     </P>
   </div>
   </div>

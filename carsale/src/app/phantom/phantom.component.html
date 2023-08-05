@@ -10,7 +10,7 @@
         </div>
         <div class="specification">
           <div class="left">
-            <img src="../../assets/p91.jpg">
+            <img [src]="phantomImg.phantomImg1">
           </div>
           <div class="right">
             <h3>Rolls-Royce Phantom</h3>
@@ -34,7 +34,7 @@
 
            <h2>Phantom Specs, Features and Price</h2>
 
-          <p>The Rolls-Royce Phantom has 1 Petrol Engine on offer. The Petrol engine is 6749 cc . It is available with Automatic transmission.Depending upon the variant and fuel type the Phantom has a mileage of 9.8 kmpl & Ground clearance of Phantom is 164mm. The Phantom is a 5 seater 12 cylinder car and has length of 5982mm, width of 2018mm and a wheelbase of 3772mm.
+          <p>{{phantomImg.paragraph7}}
           </p>
         </div>
       <div class="key">
@@ -188,111 +188,78 @@
     </div>
     </div>
 
-
-
-    <!-- <div class="row">
-      <div class="columns">
-        <div class="col-3">
-          <div class="card">
-            <div class="card-main">
-
-
-           <div class="product-containers">
-            <div class="m" (mouseover)="imageChange($event)"><img src="../../assets/g1-b.png" alt="product"></div>
-            <div class="m" (mouseover)="imageChange($event)"><img src="../../assets/g2-b.png"  alt="product"></div>
-            <div class="m" (mouseover)="imageChange($event)"><img src="../../assets/g3-b.png" alt="product"></div>
-           </div>
-           <div class="image-containers">
-            <img src="{{url}}" alt="Product">
-           </div>
-
-             <div class="cart-line"></div>
-
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </div> -->
-
-
     <div class="all-image-container">
       <h3>Exterior images</h3>
     <div class="all-images">
     <div class="interior-images">
       <div class="item-1">
-        <img src="../../assets/p91.jpg">
+        <img [src]="phantomImg.exteriorImg1">
       </div>
       <div class="item-2">
-        <img src="../../assets/p92.jpg">
+        <img [src]="phantomImg.exteriorImg2">
       </div>
       <div class="item-3">
-        <img src="../../assets/p93.jpg">
+        <img [src]="phantomImg.exteriorImg3">
       </div>
       <div class="item-4">
-        <img src="../../assets/p94.jpg">
+        <img [src]="phantomImg.exteriorImg4">
       </div>
       <div class="item-5">
-        <img src="../../assets/p95.jpg">
+        <img [src]="phantomImg.exteriorImg5">
       </div>
       <div class="item-6">
-        <img src="../../assets/p96.jpg">
+        <img [src]="phantomImg.exteriorImg6">
       </div>
       <div class="item-7">
-        <img src="../../assets/p97.jpg">
+        <img [src]="phantomImg.exteriorImg7">
       </div>
       <div class="item-8">
-        <img src="../../assets/p98.jpg">
+        <img [src]="phantomImg.exteriorImg8">
       </div>
       <div class="item-9">
-        <img src="../../assets/w92.jpg">
+        <img [src]="phantomImg.exteriorImg9">
       </div>
 
     </div>
     </div>
+
+
     <div class="eximg">
       <h3>Interior images</h3>
 
     <div class="exterior-images">
       <div class="item-1">
-        <img src="../../assets/p103.jpg">
+        <img [src]="phantomImg.inteiorImg1">
       </div>
       <div class="item-2">
-        <img src="../../assets/p104.jpg">
+        <img [src]="phantomImg.inteiorImg2">
       </div>
       <div class="item-3">
-        <img src="../../assets/p105.jpg">
+        <img [src]="phantomImg.inteiorImg3">
       </div>
       <div class="item-4">
-        <img src="../../assets/p106.jpg">
+        <img [src]="phantomImg.inteiorImg4">
       </div>
       <div class="item-5">
-        <img src="../../assets/p112.jpg">
+        <img [src]="phantomImg.inteiorImg5">
       </div>
       <div class="item-6">
-        <img src="../../assets/p108.jpg">
+        <img [src]="phantomImg.inteiorImg6">
       </div>
       <div class="item-7">
-        <img src="../../assets/p109.jpg">
+        <img [src]="phantomImg.inteiorImg7">
       </div>
       <div class="item-8">
-        <img src="../../assets/p110.jpg">
+        <img [src]="phantomImg.inteiorImg8">
       </div>
       <div class="item-9">
-        <img src="../../assets/p111.jpg">
+        <img [src]="phantomImg.inteiorImg9">
       </div>
 
     </div>
     </div>
 
     </div>
-
-
-
-
-
-
-
 
 
     <div class="row">
@@ -353,9 +320,9 @@
             <i class='far'>&#xf005;</i>
         </div>
         <span>Super Comfort</span><br>
-       <p>This is a super luxurious car. It has super comfort. Wonderful and powerful car. Its interior design is awesome.</p>
+       <p>{{phantomImg.paragraph4}}</p>
 <h4 class="review2">By Rohit Mall<br>
-  <small> On: Sep 11, 2022 | 69 Views</small></h4>
+  <small>{{phantomImg.date1}}</small></h4>
       </div>
 
     <div class="box">
@@ -368,9 +335,9 @@
           <i class='far'>&#xf005;</i>
       </div>
       <span>The Car Is Very Eye Catching</span><br>
-     <p>The car is very eye-catching. Overall performance of the car is top notch and In case of comfort, the car is excellent. I personally love this car.</p>
+     <p>{{phantomImg.paragraph5}}</p>
      <h4 class="review1">By Mohit Gamerz<br>
-      <small>On: Sep 03, 2022 | 57 Views</small></h4>
+      <small>{{phantomImg.date2}}</small></h4>
   </div>
 
   <div class="box">
@@ -383,9 +350,9 @@
         <i class="fas fa-star-half-alt"></i>
     </div>
     <span>Rolls Royce Is The Best Car In This Price Segment</span><br>
-   <p>It's the best car according to this price segment. Its comfort is so nice.</p>
+   <p>{{phantomImg.paragraph6}}</p>
    <h4 class="review3">By Jatin Thakur<br>
-    <small>On: May 15, 2022 | 75 Views</small></h4>
+    <small>{{phantomImg.date3}}</small></h4>
 </div>
     </div>
 
@@ -413,32 +380,31 @@
 <div class="groups">
   <div class="containers">
     <div class="box-top">
-        <img src="../../assets/phnew1.jpg">
+        <img [src]="phantomImg.footerImg1">
     </div>
   <div class="box-bottom">
     <h1>BEGIN YOUR PHANTOM SERIES II COMMISION</h1>
-    <P>From urban adventures to journeys into the wilderness. Handle any environment with absolute authority in the most capable Rolls-Royce ever created.
+    <P>{{phantomImg.paragraph1}}
     </P>
   </div>
   </div>
   <div class="containers">
   <div class="box-top">
-      <img src="../../assets/cunew10.jpg" id="image">
+      <img [src]="phantomImg.footerImg2" id="image">
   </div>
   <div class="box-bottom">
     <h1>DISCOVER BESPOKE</h1>
-        <P>Choose from our exclisive collections or collaborate with our craftspeople and designers
-          to create a Rolls-Royce wholly unique to you. This is Rolls-Royce Bespoke.
+        <P>{{phantomImg.paragraph2}}
         </P>
   </div>
   </div>
   <div class="containers">
   <div class="box-top">
-      <img src="../../assets/phnew2.jpg" >
+      <img [src]="phantomImg.footerImg3">
   </div>
   <div class="box-bottom">
     <h1>PHANTOM GALLERY</h1>
-    <P>As the first-ever Rolls-Royce SUV prepares for launch, only its final tests stand in its way. Watch Cullinan face its Final Challenge.
+    <P>{{phantomImg.paragraph3}}
     </P>
   </div>
   </div>

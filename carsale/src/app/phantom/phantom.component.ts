@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ModelsregisterComponent } from '../Modelsregister/Modelsregister.component';
 import { MatDialog } from '@angular/material/dialog';
 import { ServiceService } from '../service.service';
+import { phantomImages } from 'src/environments/environment.development';
 
 @Component({
   selector: 'app-phantom',
@@ -18,19 +19,21 @@ carModel:any;
 
   ngOnInit() {
   }
-  url: string = "../../../../assets/ph1-r.jpg";
-  imageChange(event: any){
-      this.url = event.target.src;
-  }
+phantomImg=phantomImages;
 
-  image:string="../../assets/ph4-b.jpg"
-  Change(event: any){
-      this.image = event.target.src;
-  }
-  content:string="../../assets/ph7-w.jpg"
-  ghost(event: any){
-      this.content = event.target.src;
-  }
+  // url: string = "../../../../assets/ph1-r.jpg";
+  // imageChange(event: any){
+  //     this.url = event.target.src;
+  // }
+
+  // image:string="../../assets/ph4-b.jpg"
+  // Change(event: any){
+  //     this.image = event.target.src;
+  // }
+  // content:string="../../assets/ph7-w.jpg"
+  // ghost(event: any){
+  //     this.content = event.target.src;
+  // }
   openDialog(details:any) {
     console.log(details);
     this.service.content=details.name;

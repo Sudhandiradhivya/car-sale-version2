@@ -85,7 +85,21 @@ export const ghostImages={
     footerImg1:"../../assets/dow.jpg",
     footerImg2:"../../assets/down2.webp",
     footerImg3:"../../assets/down3.jpg",
-    
+
+//reviews
+    paragraph1:"Making its debut in 2020, Ghost is a motor can for those who recognise beaty in restraint.Discover the purest expression of Rolls-Royce now.",
+    paragraph2:"Making its debut in 2020,the new Ghost Extended is a motor Ghost Extended is a motor car for those seeking clarity. Within the serence realm of its cabin, time and space are yours alone.",
+    paragraph3:"Choose from our exclisive collections or collaborate with our craftspeople and designers to create a Rolls-Royce wholly unique to you. This is Rolls-Royce Bespoke.",
+    paragraph4:"Whether you come from old money or you're nouveau riche, there's no better way to flaunt it than in a Rolls-Royce Ghost. This is a car with presence, a car for the one-tenth of one percent. And everyone knows it. The Ghost mimics the even more expensive Phantom sedan in both style and substance, offering an interior that's whisper quiet and impeccably outfitted with the finest materials.",
+    paragraph5:"This car is the best car one can have but is not affordable for a middle-class person. The car is super soundproof best in the premium segment and best in Power and looks the seating is also the best thus the rolls Royce is the best beast for one to have I recommend if you are eligible to buy it.",
+    paragraph6:"About 3 years ago, I was there in Mumbai. Suddenly one day, I was surprised to see that my uncle bought this super perfect car. The ride was a memorable one! And really, all its functions and everything is so much carefully designed that it feels like you're royal. #GHOST!",
+    paragraph7:`The Rolls-Royce Ghost has 1 Petrol Engine on offer. The Petrol engine is 6750 cc . It is available with Automatic transmission.Depending upon the variant and fuel type the Ghost has a mileage of 6.33 kmpl . The Ghost is a 5 seater 12 cylinder car and has length
+               of 5627mm, width of 1948mm and a wheelbase of 3465mm.`,
+
+
+    date1:"On: Mar 01, 2023 | 169 Views",
+    date2:"On: Jan 28, 2023 | 159 Views",
+    date3:"On: Jan 19, 2023 | 324 Views"
 };
 //serviceService
 export const serviceServiceImages={
@@ -94,4 +108,199 @@ export const serviceServiceImages={
     PhantomModels:"http://localhost:3000/PhantomModels",
     WraithModels:"http://localhost:3000/WraithModels",
     DawnModels:"http://localhost:3000/DawnModels"
-}
+};
+//cullinanPage
+export const cullinanImages={
+    ghostImg1:"../../assets/c51.jpg",
+    
+    exteriorImg1:"../../assets/c51.jpg",
+    exteriorImg2:"../../assets/c52.jpg",
+    exteriorImg3:"../../assets/c53.jpg",
+    exteriorImg4:"../../assets/c54.jpg",
+    exteriorImg5:"../../assets/c55.jpg",
+    exteriorImg6:"../../assets/c56.jpg",
+    exteriorImg7:"../../assets/c57.jpg",
+    exteriorImg8:"../../assets/c58.jpg",
+    exteriorImg9:"../../assets/c59.jpg",
+    exteriorImg10:"../../assets/c60.jpg",
+    exteriorImg11:"../../assets/c61.jpg",
+    exteriorImg12:"../../assets/c62.jpg",
+
+
+    inteiorImg1:"../../assets/c63.jpg",
+    inteiorImg2:"../../assets/c64.jpg",
+    inteiorImg3:"../../assets/c65.jpg",
+    inteiorImg4:"../../assets/c66.jpg",
+    inteiorImg5:"../../assets/c67.jpg",
+    inteiorImg6:"../../assets/c68.jpg",
+    inteiorImg7:"../../assets/c69.jpg",
+    inteiorImg8:"../../assets/c70.jpg",
+    inteiorImg9:"../../assets/c71.jpg",
+
+
+    footerImg1:"../../assets/cunew9.jpg",
+    footerImg2:"../../assets/cunew11.webp",
+    footerImg3:"../../assets/cunew10.jpg",
+
+//reviews
+    paragraph1:"Whether you come from old money or you're nouveau riche, there's no better way to flaunt it than in a Rolls-Royce Ghost. This is a car with presence, a car for the one-tenth of one percent. And everyone knows it. The Ghost mimics the even more expensive Phantom sedan in both style and substance, offering an interior that's whisper quiet and impeccably outfitted with the finest materials.",
+    paragraph2:"This car is the best car one can have but is not affordable for a middle-class person. The car is super soundproof best in the premium segment and best in Power and looks the seating is also the best thus the rolls Royce is the best beast for one to have I recommend if you are eligible to buy it.",
+    paragraph3:"From urban adventures to journeys into the wilderness. Handle any environment with absolute authority in the most capable Rolls-Royce ever created.",
+    paragraph4:`As the first-ever Rolls-Royce SUV prepares for launch, only its final tests stand in its way. Watch Cullinan face its Final Challenge.`,
+    paragraph5:`This car is the best car one can have but is not affordable for a middle-class person. The car is super soundproof best in the premium segment and best in Power and looks the seating is also the best thus the rolls Royce is the best beast for one to have I recommend if you are eligible to buy it.`,
+    paragraph6:"Choose from our exclisive collections or collaborate with our craftspeople and designers to create a Rolls-Royce wholly unique to you. This is Rolls-Royce Bespoke.",
+    
+
+
+    date1:"On: Mar 01, 2023 | 169 Views",
+    date2:"On: Jan 28, 2023 | 159 Views",
+    date3:"On: Jan 19, 2023 | 324 Views",
+
+
+    url:"../../assets/cul1-b.png",
+    image:"",
+    content:""
+};
+//WraithPage
+export const wraithImages={
+    wraithImg1:"../../assets/w71.jpg",
+    
+    exteriorImg1:"../../assets/w71.jpg",
+    exteriorImg2:"../../assets/w72.jpg",
+    exteriorImg3:"../../assets/w73.jpg",
+    exteriorImg4:"../../assets/w74.jpg",
+    exteriorImg5:"../../assets/w75.jpg",
+    exteriorImg6:"../../assets/w76.jpg",
+    exteriorImg7:"../../assets/w77.jpg",
+    exteriorImg8:"../../assets/w78.jpg",
+    exteriorImg9:"../../assets/w79.jpg",
+    exteriorImg10:"../../assets/w80.jpg",
+    exteriorImg11:"../../assets/w81.jpg",
+    exteriorImg12:"../../assets/w82.jpg",
+
+
+    inteiorImg1:"../../assets/w83.jpg",
+    inteiorImg2:"../../assets/w84.jpg",
+    inteiorImg3:"../../assets/w85.jpg",
+    inteiorImg4:"../../assets/w86.jpg",
+    inteiorImg5:"../../assets/w87.jpg",
+    inteiorImg6:"../../assets/w89.jpg",
+    inteiorImg7:"../../assets/w90.jpg",
+    inteiorImg8:"../../assets/w91.jpg",
+    inteiorImg9:"../../assets/w92.jpg",
+
+
+    footerImg1:"../../assets/wranew15.webp",
+    footerImg2:"../../assets/wranew11.webp",
+    footerImg3:"../../assets/wranew2.jpg",
+
+//reviews
+    paragraph1:`Power is unleashed with Black Badge Wraith. The boldest edition of the world's most powerful Rolls-Royce is sculpted for those who dare to defy convention.`,
+    paragraph2:`Choose from our exclisive collections or collaborate with our craftspeople and designers
+                to create a Rolls-Royce wholly unique to you. This is Rolls-Royce Bespoke.`,
+    paragraph3:"Presenting Wraith Kryptos-a limited, bespoke collection inspired by the clandestine world of cryptography.",
+    paragraph4:`This car is very comfortable and very very wonderful. My favorite car is this.
+                So, I love this car. I am also providing to all the richest people who can buy this car.I am very poor so I have not bought this car. Thank you. Rolls-Royce team.`,
+    paragraph5:`Very comfortable car. Features wise it's awesome. Better performance. Full safety car. Drive this car you feel very comfortable than other cars. `,
+    paragraph6:"About 3 years ago, I was there in Mumbai. Suddenly one day, I was surprised to see that my uncle bought this super perfect car. The ride was a memorable one! And really, all its functions and everything is so much carefully designed that it feels like you're royal. #GHOST!",
+    paragraph7:`So Comfortable and Safest car. No Questions for This Car. No words can explain it completely. Wow, It's Amazing.`,
+
+
+    date1:"On: Jan 19, 2023 | 324 Views",
+    date2:"On: May 13, 2022 | 97 Views",
+    date3:"On: Jan 17, 2023 | 93 Views"
+};
+//PhantomPage
+export const phantomImages={
+    phantomImg1:"../../assets/p91.jpg",
+    
+
+    exteriorImg1:"../../assets/p91.jpg",
+    exteriorImg2:"../../assets/p92.jpg",
+    exteriorImg3:"../../assets/p93.jpg",
+    exteriorImg4:"../../assets/p94.jpg",
+    exteriorImg5:"../../assets/p95.jpg",
+    exteriorImg6:"../../assets/p96.jpg",
+    exteriorImg7:"../../assets/p97.jpg",
+    exteriorImg8:"../../assets/p98.jpg",
+    exteriorImg9:"../../assets/w92.jpg",
+
+
+    inteiorImg1:"../../assets/p103.jpg",
+    inteiorImg2:"../../assets/p104.jpg",
+    inteiorImg3:"../../assets/p105.jpg",
+    inteiorImg4:"../../assets/p106.jpg",
+    inteiorImg5:"../../assets/p112.jpg",
+    inteiorImg6:"../../assets/p108.jpg",
+    inteiorImg7:"../../assets/p109.jpg",
+    inteiorImg8:"../../assets/p110.jpg",
+    inteiorImg9:"../../assets/p111.jpg",
+
+
+    footerImg1:"../../assets/phnew1.jpg",
+    footerImg2:"../../assets/cunew10.jpg",
+    footerImg3:"../../assets/phnew2.jpg",
+
+//reviews
+    paragraph1:`From urban adventures to journeys into the wilderness. Handle any environment with absolute authority in the most capable Rolls-Royce ever created.`,
+    paragraph2:`Choose from our exclisive collections or collaborate with our craftspeople and designers
+               to create a Rolls-Royce wholly unique to you. This is Rolls-Royce Bespoke.`,
+    paragraph3:`As the first-ever Rolls-Royce SUV prepares for launch, only its final tests stand in its way. Watch Cullinan face its Final Challenge.`,
+    paragraph4:`This is a super luxurious car. It has super comfort. Wonderful and powerful car. Its interior design is awesome.`,
+    paragraph5:`The car is very eye-catching. Overall performance of the car is top notch and In case of comfort, the car is excellent. I personally love this car.`,
+    paragraph6:`It's the best car according to this price segment. Its comfort is so nice.`,
+    paragraph7:`The Rolls-Royce Phantom has 1 Petrol Engine on offer. The Petrol engine is 6749 cc . It is available with Automatic transmission.Depending upon the variant and fuel type the Phantom has a mileage of 9.8 kmpl & Ground clearance of Phantom is 164mm. The Phantom is a 5 seater 12 cylinder car and has length of 5982mm, width of 2018mm and a wheelbase of 3772mm.`,
+
+    date1:"On: Sep 11, 2022 | 69 Views",
+    date2:"On: Sep 03, 2022 | 57 Views",
+    date3:"On: May 15, 2022 | 75 Views"
+};
+
+//dawnPage
+export const dawnImages={
+    dawnImg1:"../../assets/d11.jpg",
+    
+
+    exteriorImg1:"../../assets/d11.jpg",
+    exteriorImg2:"../../assets/d12.jpg",
+    exteriorImg3:"../../assets/d13.jpg",
+    exteriorImg4:"../../assets/d14.jpg",
+    exteriorImg5:"../../assets/d15.jpg",
+    exteriorImg6:"../../assets/d16.jpg",
+    exteriorImg7:"../../assets/d17.jpg",
+    exteriorImg8:"../../assets/d18.jpg",
+    exteriorImg9:"../../assets/d19.jpg",
+    exteriorImg10:"../../assets/d20.jpg",
+    exteriorImg11:"../../assets/d21.jpg",
+    exteriorImg12:"../../assets/d22.jpg",
+
+
+    inteiorImg1:"../../assets/d23.jpg",
+    inteiorImg2:"../../assets/d24.jpg",
+    inteiorImg3:"../../assets/d25.jpg",
+    inteiorImg4:"../../assets/d26.jpg",
+    inteiorImg5:"../../assets/d27.jpg",
+    inteiorImg6:"../../assets/d28.jpg",
+    inteiorImg7:"../../assets/d32.jpg",
+    inteiorImg8:"../../assets/d30.jpg",
+    inteiorImg9:"../../assets/d31.jpg",
+
+
+    footerImg1:"../../assets/cq5dam.web.1920.webp",
+    footerImg2:"../../assets/cunew10.jpg",
+    footerImg3:"../../assets/cq5dam.web.1920 (3).webp",
+
+//reviews
+    paragraph1:`Dawn Drophead Coupe delivers open-top driving as never experienced before.Take the first steps towards your personal commission.Dawn Drophead Coupe delivers open-top driving as never experienced before.Take the first steps towards your personal commission.`,
+    paragraph2:`Choose from our exclisive collections or collaborate with our craftspeople and designers
+               to create a Rolls-Royce wholly unique to you. This is Rolls-Royce Bespoke.`,
+    paragraph3:`Inspired by the spirit of the Brewster Playboy Roadsters of the 1920s, Dawn Silver Bullet is a modern interpretation of the heady, irreverrent attitude of that decade.`,
+    paragraph4:`This is a super luxurious car. It has super comfort. Wonderful and powerful car. Its interior design is awesome.`,
+    paragraph5:`Great response from my neighbors as the looks of the car are amazing.`,
+    paragraph6:`It's the best car according to this price segment. Its comfort is so nice.`,
+    paragraph7:`The Rolls-Royce Rolls Royce Dawn has 1 Petrol Engine on offer. The Petrol engine is 6598 cc . It is available with Automatic transmission.Depending upon the variant and fuel type the Rolls Royce Dawn has a mileage of . The Rolls Royce Dawn is a 4 seater 12 cylinder car and has length of 5285 mm, width of 1947mm and a wheelbase of 3112mm.`,
+
+    date1:"On: Jun 11, 2022 | 69 Views",
+    date2:"On: Dec 29, 2019 | 60 Views",
+    date3:"On: May 15, 2022 | 75 Views"
+};

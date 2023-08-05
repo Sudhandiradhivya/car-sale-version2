@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { ModelsregisterComponent } from '../Modelsregister/Modelsregister.component';
 import { ServiceService } from '../service.service';
+import { dawnImages } from 'src/environments/environment.development';
 
 @Component({
   selector: 'app-dawn',
@@ -18,18 +19,20 @@ export class DawnComponent implements OnInit {
 
   ngOnInit() {
   }
-  url: string = "../../../assets/da1-b.jpg";
-  imageChange(event: any){
-      this.url = event.target.src;
-  }
-  image:string="../../assets/da4-g.png"
-  Change(event: any){
-      this.image = event.target.src;
-  }
-  content:string="../../assets/da7-b.png"
-  ghost(event: any){
-      this.content = event.target.src;
-  }
+
+  dawnImg:any=dawnImages;
+  // url: string = "../../../assets/da1-b.jpg";
+  // imageChange(event: any){
+  //     this.url = event.target.src;
+  // }
+  // image:string="../../assets/da4-g.png"
+  // Change(event: any){
+  //     this.image = event.target.src;
+  // }
+  // content:string="../../assets/da7-b.png"
+  // ghost(event: any){
+  //     this.content = event.target.src;
+  // }
   openDialog(details:any) {
     console.log(details);
     this.service.content=details.name;

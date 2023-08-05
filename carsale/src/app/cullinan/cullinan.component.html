@@ -11,7 +11,7 @@
     </div>
     <div class="specification">
       <div class="left">
-        <img src="../../assets/c51.jpg">
+        <img [src]="cullinanImg.ghostImg1">
       </div>
       <div class="right">
         <h3>Rolls-Royce Cullinan</h3>
@@ -213,40 +213,40 @@
 <div class="all-images">
 <div class="interior-images">
   <div class="item-1">
-    <img src="../../assets/c51.jpg">
+    <img [src]="cullinanImg.exteriorImg1">
   </div>
   <div class="item-2">
-    <img src="../../assets/c52.jpg">
+    <img [src]="cullinanImg.exteriorImg2">
   </div>
   <div class="item-3">
-    <img src="../../assets/c53.jpg">
+    <img [src]="cullinanImg.exteriorImg3">
   </div>
   <div class="item-4">
-    <img src="../../assets/c54.jpg">
+    <img [src]="cullinanImg.exteriorImg4">
   </div>
   <div class="item-5">
-    <img src="../../assets/c55.jpg">
+    <img [src]="cullinanImg.exteriorImg5">
   </div>
   <div class="item-6">
-    <img src="../../assets/c56.jpg">
+    <img [src]="cullinanImg.exteriorImg6">
   </div>
   <div class="item-7">
-    <img src="../../assets/c57.jpg">
+    <img [src]="cullinanImg.exteriorImg7">
   </div>
   <div class="item-8">
-    <img src="../../assets/c58.jpg">
+    <img [src]="cullinanImg.exteriorImg8">
   </div>
   <div class="item-9">
-    <img src="../../assets/c59.jpg">
+    <img [src]="cullinanImg.exteriorImg9">
   </div>
   <div class="item-10">
-    <img src="../../assets/c60.jpg">
+    <img [src]="cullinanImg.exteriorImg10">
   </div>
   <div class="item-11">
-    <img src="../../assets/c61.jpg">
+    <img [src]="cullinanImg.exteriorImg11">
   </div>
   <div class="item-12">
-    <img src="../../assets/c62.jpg">
+    <img [src]="cullinanImg.exteriorImg12">
   </div>
 </div>
 </div>
@@ -255,90 +255,37 @@
 
 <div class="exterior-images">
   <div class="item-1">
-    <img src="../../assets/c63.jpg">
+    <img [src]="cullinanImg.inteiorImg1">
   </div>
   <div class="item-2">
-    <img src="../../assets/c64.jpg">
+    <img [src]="cullinanImg.inteiorImg2">
   </div>
   <div class="item-3">
-    <img src="../../assets/c65.jpg">
+    <img [src]="cullinanImg.inteiorImg3">
   </div>
   <div class="item-4">
-    <img src="../../assets/c66.jpg">
+    <img [src]="cullinanImg.inteiorImg4">
   </div>
   <div class="item-5">
-    <img src="../../assets/c67.jpg">
+    <img [src]="cullinanImg.inteiorImg5">
   </div>
   <div class="item-6">
-    <img src="../../assets/c68.jpg">
+    <img [src]="cullinanImg.inteiorImg6">
   </div>
   <div class="item-7">
-    <img src="../../assets/c69.jpg">
+    <img [src]="cullinanImg.inteiorImg7">
   </div>
   <div class="item-8">
-    <img src="../../assets/c70.jpg">
+    <img [src]="cullinanImg.inteiorImg8">
   </div>
   <div class="item-9">
-    <img src="../../assets/c71.jpg">
+    <img [src]="cullinanImg.inteiorImg9">
   </div>
 
 </div>
 </div>
 
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -480,9 +427,9 @@
             <i class='far'>&#xf005;</i>
         </div>
         <span>Signal Of Upper-Crust Luxury</span><br>
-       <p>Whether you come from old money or you're nouveau riche, there's no better way to flaunt it than in a Rolls-Royce Ghost. This is a car with presence, a car for the one-tenth of one percent. And everyone knows it. The Ghost mimics the even more expensive Phantom sedan in both style and substance, offering an interior that's whisper quiet and impeccably outfitted with the finest materials.</p>
+       <p>{{cullinanImg.paragraph1}}</p>
 <h4 class="review2">By Leroy Chirappanath<br>
-  <small>On: Mar 01, 2023 | 169 Views</small></h4>
+  <small>{{cullinanImg.date1}}</small></h4>
       </div>
 
     <div class="box">
@@ -495,9 +442,9 @@
           <i class='far'>&#xf005;</i>
       </div>
       <span>THE BEAUTY AND BEAST IN SINGLE CAR</span><br>
-     <p>This car is the best car one can have but is not affordable for a middle-class person. The car is super soundproof best in the premium segment and best in Power and looks the seating is also the best thus the rolls Royce is the best beast for one to have I recommend if you are eligible to buy it.</p>
+     <p>{{cullinanImg.paragraph2}}</p>
      <h4 class="review1">By Surya<br>
-      <small>On: Jan 28, 2023 | 159 Views</small></h4>
+      <small>{{cullinanImg.date2}}</small></h4>
   </div>
 
   <div class="box">
@@ -510,9 +457,9 @@
         <i class="fas fa-star-half-alt"></i>
     </div>
     <span>A RIDE IN THE GHOST</span><br>
-   <p>About 3 years ago, I was there in Mumbai. Suddenly one day, I was surprised to see that my uncle bought this super perfect car. The ride was a memorable one! And really, all its functions and everything is so much carefully designed that it feels like you're royal. #GHOST!</p>
+   <p>{{cullinanImg.paragraph3}}</p>
    <h4 class="review3">By Ratna Nath<br>
-    <small>On: Jan 19, 2023 | 324 Views</small></h4>
+    <small>{{cullinanImg.date3}}</small></h4>
 </div>
     </div>
 
@@ -528,32 +475,31 @@
 <div class="groups">
   <div class="containers">
     <div class="box-top">
-        <img src="../../assets/cunew9.jpg">
+        <img [src]="cullinanImg.footerImg1" >
     </div>
   <div class="box-bottom">
     <h1>CULLINAN-IN DETAIL</h1>
-    <P>From urban adventures to journeys into the wilderness. Handle any environment with absolute authority in the most capable Rolls-Royce ever created.
+    <P>{{cullinanImg.paragraph1}}
     </P>
   </div>
   </div>
   <div class="containers">
   <div class="box-top">
-      <img src="../../assets/cunew11.webp" id="image">
+      <img [src]="cullinanImg.footerImg2"  id="image">
   </div>
   <div class="box-bottom">
     <h1>CULLINAN: THE FINAL CHALLENGE</h1>
-      <P>As the first-ever Rolls-Royce SUV prepares for launch, only its final tests stand in its way. Watch Cullinan face its Final Challenge.
+      <P>{{cullinanImg.paragraph2}}
       </P>
   </div>
   </div>
   <div class="containers">
   <div class="box-top">
-      <img src="../../assets/cunew10.jpg" >
+      <img [src]="cullinanImg.footerImg3" >
   </div>
   <div class="box-bottom">
     <h1>DISCOVER BESPOKE</h1>
-      <P>Choose from our exclisive collections or collaborate with our craftspeople and designers
-        to create a Rolls-Royce wholly unique to you. This is Rolls-Royce Bespoke.
+      <P>{{cullinanImg.paragraph3}}
       </P>
   </div>
   </div>

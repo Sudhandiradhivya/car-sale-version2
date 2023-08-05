@@ -3,6 +3,7 @@ import { MatDialog } from '@angular/material/dialog';
 import { ModelsregisterComponent } from '../Modelsregister/Modelsregister.component';
 import { CullinanService } from './cullinan.service';
 import { ServiceService } from '../service.service';
+import { cullinanImages } from 'src/environments/environment.development';
 
 @Component({
   selector: 'app-cullinan',
@@ -19,18 +20,20 @@ export class CullinanComponent implements OnInit {
   }
   ngOnInit() {
   }
-  url: string = "../../assets/cul1-b.png";
-  imageChange(event: any){
-      this.url = event.target.src;
-  }
-  image:string="../../assets/cul4-r.png"
-  Change(event: any){
-      this.image = event.target.src;
-  }
-  content:string="../../assets/cul7-y.png"
-  ghost(event: any){
-      this.content = event.target.src;
-  }
+cullinanImg=cullinanImages;
+
+  // url: string = "../../assets/cul1-b.png";
+  // imageChange(event: any){
+  //     this.url = event.target.src;
+  // }
+  // image:string="../../assets/cul4-r.png"
+  // Change(event: any){
+  //     this.image = event.target.src;
+  // }
+  // content:string="../../assets/cul7-y.png"
+  // ghost(event: any){
+  //     this.content = event.target.src;
+  // }
   openDialog(details:any) {
     console.log(details);
     this.service.content=details.name;
