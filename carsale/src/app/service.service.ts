@@ -6,16 +6,16 @@ import { environment, serviceServiceImages} from 'src/environments/environment.d
   providedIn: 'root'
 })
 export class ServiceService {
-  private apiUrl='http://localhost:3000/carmodels'
+  private apiUrl=serviceServiceImages.Url;
   constructor(private http:HttpClient) { }
 postServiceDetails(body:any){
-  return this.http.post("http://localhost:3000/serviceDetails",body)
+  return this.http.post(serviceServiceImages.ServiceDetails,body)
 }
 postOrderDetails(body:any){
   return this.http.post(environment.name,body)
 }
 postLoginDetails(body:any){
-  return this.http.post("http://localhost:3000/Register",body)
+  return this.http.post(serviceServiceImages.Register,body)
 }
 
 getCarModels(){

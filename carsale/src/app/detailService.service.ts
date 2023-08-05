@@ -11,34 +11,34 @@ addUser: any;
 
 constructor(private http:HttpClient) { }
 getLoginDetails(){
-  return this.http.get("http://localhost:3000/Register");
+  return this.http.get(detailsImages.loginDetails);
 }
 getServiceDetails(){
-  return this.http.get("http://localhost:3000/serviceDetails");
+  return this.http.get(detailsImages.serviceDetails);
 }
 getOrderDetails(){
-  return this.http.get("http://localhost:3000/Modelsregister");
+  return this.http.get(detailsImages.modelsRegister);
 }
 getUsersList():Observable<any>{
-    return this.http.get('http://localhost:3000/Register');
+    return this.http.get(detailsImages.user);
 }
 deleteUser(id:number):Observable<any>{
    return this.http.delete(`http://localhost:3000/Register/${id}`);
 }
 getOrderList():Observable<any>{
-  return this.http.get('http://localhost:3000/Modelsregister');
+  return this.http.get(detailsImages.modelsRegister);
 }
 deleteOrder(id:number):Observable<any>{
-  return this.http.delete(`http://localhost:3000/Modelsregister/${id}`);
+  return this.http.delete(`detailsImages.modelsRegister/${id}`);
 }
 getServiceList():Observable<any>{
-  return this.http.get('http://localhost:3000/serviceDetails');
+  return this.http.get(detailsImages.serviceDetails);
 }
 deleteService(id:number):Observable<any>{
   return this.http.delete(`http://localhost:3000/serviceDetails/${id}`);
 }
 getImagesList():Observable<any>{
- return this.http.get('http://localhost:3000/Images');
+ return this.http.get(detailsImages.images);
 }
 getNewsList():Observable<any>{
        return this.http.get(detailsImages.news);
@@ -47,7 +47,7 @@ getReviewList():Observable<any>{
  return this.http.get(detailsImages.reviews);
 }
 getExampleImage():Observable<any>{
-  return this.http.get(' http://localhost:3000/ExampleImages');
+  return this.http.get(detailsImages.exampleImages);
 }
 billGenerate:any;
 value:any;

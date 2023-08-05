@@ -34,7 +34,14 @@ export const detailsImages={
     image6:"https://imgd.aeplcdn.com/664x374/cw/ec/21135/RollsRoyce-Wraith-Right-Front-Three-Quarter-62429.jpg?v=201711021421&q=75",
     image7:"https://cdni.autocarindia.com/utils/imageresizer.ashx?n=https://cms.haymarketindia.net/model/uploads/modelimages/PhantomModelImage.jpg",
     image8:"https://imgd.aeplcdn.com/664x374/cw/ec/34427/RollsRoyce-Cullinan-Exterior-158729.jpg?wm=0&q=75",
-    image9:"https://images.garipoint.com/get_new_car_images.php?width=580&height=320&path=model_images/rolls-royce/ghost-series-ii/rolls-royce-ghost-series-ii-primary.jpg"
+    image9:"https://images.garipoint.com/get_new_car_images.php?width=580&height=320&path=model_images/rolls-royce/ghost-series-ii/rolls-royce-ghost-series-ii-primary.jpg",
+    loginDetails:"http://localhost:3000/Register",
+    serviceDetails:"http://localhost:3000/serviceDetails",
+    modelsRegister:"http://localhost:3000/Modelsregister",
+    user:"http://localhost:3000/Register",
+    images:"http://localhost:3000/Images",
+    exampleImages:"http://localhost:3000/ExampleImages",
+    
 };
 //ServicePage
 export const serviceImages={
@@ -107,8 +114,26 @@ export const serviceServiceImages={
     CullinanModels:"http://localhost:3000/Cullinanmodels",
     PhantomModels:"http://localhost:3000/PhantomModels",
     WraithModels:"http://localhost:3000/WraithModels",
-    DawnModels:"http://localhost:3000/DawnModels"
+    DawnModels:"http://localhost:3000/DawnModels",
+    Register:"http://localhost:3000/Register",
+    ServiceDetails:"http://localhost:3000/serviceDetails",
+    Url:"http://localhost:3000/carmodels"
 };
+//UserService
+export const userService={
+  user:"http://localhost:3000/users"
+};
+//registerService
+export const registerService={
+    register:"http://localhost:3000/Register"
+  };
+//modelService
+export const modelService={
+    model:"http://localhost:3000/products"
+  };
+  
+
+
 //cullinanPage
 export const cullinanImages={
     ghostImg1:"../../assets/c51.jpg",
