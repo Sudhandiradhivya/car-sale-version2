@@ -7,7 +7,7 @@ import { Car } from "./car";
 
 export class FilterPipe implements PipeTransform{
   filteration:string=''
-  transform(cars:Car[], searchValue:String) {
+  transform(cars:Car[],searchValue:String) {
    if(cars.length===0|| searchValue===''){
        return cars;
    }

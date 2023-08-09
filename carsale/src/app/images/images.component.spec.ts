@@ -9,6 +9,10 @@ import { DetailServiceService } from '../detailService.service';
 import { ActivatedRoute, RouterModule } from '@angular/router';
 import { HeaderComponent } from '../header/header.component';
 import { FooterComponent } from '../footer/footer.component';
+import { ProductListComponent } from '../product-list/product-list.component';
+import { ProductComponent } from '../product-list/product/product.component';
+import { ButtonfilterComponent } from '../buttonfilter/buttonfilter.component';
+import { FormsModule } from '@angular/forms';
 
 describe('ImagesComponent', () => {
   let component: ImagesComponent;
@@ -16,9 +20,9 @@ describe('ImagesComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      
-      declarations: [ImagesComponent,HeaderComponent,FooterComponent],
-      imports: [HttpClientModule,RouterModule], // Include HttpClientModule here
+
+      declarations: [ImagesComponent,HeaderComponent,FooterComponent,ProductListComponent,ProductComponent,ButtonfilterComponent],
+      imports: [HttpClientModule,RouterModule,FormsModule], // Include HttpClientModule here
       providers: [
         // Provide ActivatedRoute
         DetailServiceService,
@@ -28,7 +32,7 @@ describe('ImagesComponent', () => {
             /* Mock the necessary properties or methods of ActivatedRoute */
           },
         },]
-      
+
     })
     .compileComponents();
   }));
@@ -42,5 +46,5 @@ describe('ImagesComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
-  
+
 });

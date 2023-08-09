@@ -4,6 +4,8 @@ import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
 
 import { ProductComponent } from './product.component';
+import { ProductListComponent } from '../product-list.component';
+import { ButtonfilterComponent } from 'src/app/buttonfilter/buttonfilter.component';
 
 describe('ProductComponent', () => {
   let component: ProductComponent;
@@ -11,7 +13,7 @@ describe('ProductComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ProductComponent ]
+      declarations: [ ProductComponent,ProductListComponent,ButtonfilterComponent]
     })
     .compileComponents();
   }));

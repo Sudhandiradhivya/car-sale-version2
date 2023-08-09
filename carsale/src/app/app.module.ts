@@ -70,9 +70,10 @@ import { PayComponent } from './pay/pay.component';
 import { PasswordresetComponent } from './passwordreset/passwordreset.component';
 import { RouterModule } from '@angular/router';
 import { ProductListComponent } from './product-list/product-list.component';
+import { ProductComponent } from './product-list/product/product.component';
 
 @NgModule({
-  declarations: [								
+  declarations: [
     AppComponent,
       HomeComponent,
       AboutComponent,
@@ -98,7 +99,7 @@ import { ProductListComponent } from './product-list/product-list.component';
       AdminHeaderComponent,
       AdminFooterComponent,
       AdminHomePageComponent,
-   
+
       ServiceDetailsComponent,
       OrderDetailsComponent,
       // ProductComponent,
@@ -119,7 +120,8 @@ import { ProductListComponent } from './product-list/product-list.component';
       PayComponent,
       PasswordresetComponent,
       ProductListComponent,
-      
+      ProductComponent
+
    ],
   imports: [
     BrowserModule,
@@ -140,7 +142,7 @@ import { ProductListComponent } from './product-list/product-list.component';
     MatDialogModule,
     RouterModule,
    BrowserAnimationsModule
- 
+
   ],
   providers: [DeactivateGuard,ModelGuard,ModellingService],
   bootstrap: [AppComponent]

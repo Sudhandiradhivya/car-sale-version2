@@ -1,0 +1,7 @@
+.product-container{
+  margin: 10%;
+  /* padding: 10px 17px; */
+  display: grid;
+  grid-template-columns:repeat(3,1fr);
+}
+

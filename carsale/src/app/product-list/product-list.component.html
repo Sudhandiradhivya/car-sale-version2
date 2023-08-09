@@ -1,1 +1,7 @@
-<p>product-list works!</p>
+<h2 style="margin-left: 4%;margin-top: 3%; font-size: 28px;" id="Images">Images</h2>
+<!-- <h4 style="margin-left: 4%;">Total Models Images:{{" "}}{{TotalModels | async}}</h4> -->
+
+<!-- <app-buttonfilter></app-buttonfilter> -->
+<div class="product-container">
+  <app-product *ngFor="let product of models" [product]="product"></app-product>
+</div>

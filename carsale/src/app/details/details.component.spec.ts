@@ -11,6 +11,9 @@ import { HttpClientModule } from '@angular/common/http';
 import { DetailServiceService } from '../detailService.service';
 import { ActivatedRoute, convertToParamMap } from '@angular/router';
 import { FormsModule } from '@angular/forms';
+import { ProductListComponent } from '../product-list/product-list.component';
+import { ProductComponent } from '../product-list/product/product.component';
+import { ButtonfilterComponent } from '../buttonfilter/buttonfilter.component';
 
 describe('DetailsComponent', () => {
   let component: DetailsComponent;
@@ -18,7 +21,7 @@ describe('DetailsComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ DetailsComponent,HeaderComponent,FooterComponent,ImagesComponent ],
+      declarations: [ DetailsComponent,HeaderComponent,FooterComponent,ImagesComponent,ProductListComponent,ProductComponent,ButtonfilterComponent],
       imports:[HttpClientModule,FormsModule],
       providers:[DetailServiceService,
         {
@@ -33,7 +36,7 @@ describe('DetailsComponent', () => {
     .compileComponents();
   }));
 
-  
+
   beforeEach(() => {
     fixture = TestBed.createComponent(DetailsComponent);
     component = fixture.componentInstance;

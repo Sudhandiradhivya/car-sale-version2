@@ -1,3 +1,32 @@
-<p>
-  product works!
-</p>
+
+
+<!-- <h4 style="margin-left: 4%;">Total Models Images:{{" "}}{{TotalModels | async}}</h4> -->
+<div class="product-item">
+
+  <div class="sale-container" >
+    <div class="add--to--wishlist">
+      <i class="fa fa-heart-o"></i>
+    </div>
+    <!-- <div class="sale-tag" *ngIf="product.discountPrice">
+      {{(((product.price-product.discountPrice)/product.price)*100).toFixed(0)}}%OFF</div> -->
+   </div>
+  <div class="product-image">
+      <img [src]=product?.imageUrl class="product--image">
+  </div>
+  <div class="add--to--price">
+     <!-- {{product.discountPrice? (product.price-(product.price*product.discountPrice/100)).toFixed(0):product.price}} -->
+     {{product?.discountPrice? product.discountPrice:product?.price}}
+  </div>
+  <!-- <div class="add--to--price" *ngIf="product.discountPrice">
+    {{(product.price-(product.price*product.discountPrice/100)).toFixed(0)}}
+ </div> -->
+  <div class="product--name">{{product?.name}}</div>
+  <div class="product--category">Items-left:{{product?.items_left}}</div>
+  <div class="product--available-colors">$COLORCOUNT {{product?.color.length}} . Best Seller</div>
+
+  <!-- <button style="margin-left: 60px;margin-top: 20px;text-decoration: none;" id="button1"><a routerLink="/Models" >Show more Details</a></button> -->
+</div>
+
+
+
+

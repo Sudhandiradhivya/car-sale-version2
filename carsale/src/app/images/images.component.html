@@ -58,39 +58,7 @@
 
 
 
-<h2 style="margin-left: 4%;margin-top: 3%; font-size: 28px;" id="Images">Images</h2>
-
-<h4 style="margin-left: 4%;">Total Models Images:{{" "}}{{TotalModels | async}}</h4>
-<div class="products-container" >
-<div class="product-item" *ngFor="let product of models">
-
-  <div class="sale-container" >
-    <div class="add--to--wishlist">
-      <i class="fa fa-heart-o"></i>
-    </div>
-    <!-- <div class="sale-tag" *ngIf="product.discountPrice">
-      {{(((product.price-product.discountPrice)/product.price)*100).toFixed(0)}}%OFF</div> -->
-   </div>
-  <div class="product-image">
-      <img [src]="product.imageUrl" class="product--image">
-  </div>
-  <div class="add--to--price">
-     <!-- {{product.discountPrice? (product.price-(product.price*product.discountPrice/100)).toFixed(0):product.price}} -->
-     {{product.discountPrice? product.discountPrice:product.price}}
-  </div>
-  <!-- <div class="add--to--price" *ngIf="product.discountPrice">
-    {{(product.price-(product.price*product.discountPrice/100)).toFixed(0)}}
- </div> -->
-  <div class="product--name">{{product.name}}</div>
-  <div class="product--category">Items-left:{{product.items_left}}</div>
-  <div class="product--available-colors">$COLORCOUNT {{product.color.length}} . Best Seller</div>
-
-  <!-- <button style="margin-left: 60px;margin-top: 20px;text-decoration: none;" id="button1"><a routerLink="/Models" >Show more Details</a></button> -->
-</div>
-
-</div>
-</div>
-
+<app-product-list></app-product-list>
 <h2 style="margin-left: 4%;margin-top: 3%; font-size: 28px;" id="News">News</h2>
 <div class="reviews" >
  <mat-card class="example-card" *ngFor="let item of news">
