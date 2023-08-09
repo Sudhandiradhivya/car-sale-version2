@@ -25,6 +25,6 @@ fiterradiochange:EventEmitter<string>=new EventEmitter<string>
 
 onradiobuttonchange(){
   this.fiterradiochange.emit(this.searchradio);
-//console.log(this.searchradio);
+
 }
 }

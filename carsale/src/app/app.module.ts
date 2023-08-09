@@ -39,7 +39,7 @@ import { AdminHomePageComponent } from './AdminHomePage/AdminHomePage.component'
 
 import { ServiceDetailsComponent } from './serviceDetails/serviceDetails.component';
 import { OrderDetailsComponent } from './OrderDetails/OrderDetails.component';
-import { ProductComponent } from './product/product.component';
+// import { ProductComponent } from './product/product.component';
 import { UserscomponentComponent } from './userscomponent/userscomponent.component';
 import { AdminpageheaderComponent } from './adminpageheader/adminpageheader.component';
 import { AdminpagesidebarComponent } from './adminpagesidebar/adminpagesidebar.component';
@@ -69,6 +69,7 @@ import { CountdownComponent } from './countdown/countdown.component';
 import { PayComponent } from './pay/pay.component';
 import { PasswordresetComponent } from './passwordreset/passwordreset.component';
 import { RouterModule } from '@angular/router';
+import { ProductListComponent } from './product-list/product-list.component';
 
 @NgModule({
   declarations: [								
@@ -100,7 +101,7 @@ import { RouterModule } from '@angular/router';
    
       ServiceDetailsComponent,
       OrderDetailsComponent,
-      ProductComponent,
+      // ProductComponent,
       UserscomponentComponent,
       AdminpageheaderComponent,
       AdminpagesidebarComponent,
@@ -117,6 +118,7 @@ import { RouterModule } from '@angular/router';
       CountdownComponent,
       PayComponent,
       PasswordresetComponent,
+      ProductListComponent,
       
    ],
   imports: [
