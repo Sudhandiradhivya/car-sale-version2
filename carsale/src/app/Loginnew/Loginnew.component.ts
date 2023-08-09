@@ -6,6 +6,7 @@ import { LoginService } from '../login.service';
 import { ModellingService } from '../modelling.service';
 import { MatDialog } from '@angular/material/dialog';
 import { PasswordresetComponent } from '../passwordreset/passwordreset.component';
+import { NGXLogger } from 'ngx-logger';
 
 @Component({
   selector: 'app-Loginnew',
@@ -13,9 +14,10 @@ import { PasswordresetComponent } from '../passwordreset/passwordreset.component
   styleUrls: ['./Loginnew.component.css']
 })
 export class LoginnewComponent {
+
   // [x: string]: any;
   // usersuccess=false;
-  constructor(private formBuilder:FormBuilder,private https:HttpClient,private route:Router, private service:LoginService,private modellingservice:ModellingService,private dialog:MatDialog) {
+  constructor(private formBuilder:FormBuilder,private https:HttpClient,private route:Router, private service:LoginService,private modellingservice:ModellingService,private dialog:MatDialog,private logger: NGXLogger) {
    }
 
  loginForms=this.formBuilder.group({
@@ -40,6 +42,7 @@ user(){
 
       if(users){
         alert("Login Successfully");
+        this.logger.info("user login successfull..");
         sessionStorage.setItem('user',JSON.stringify(users));
         sessionStorage.setItem('usersuccess','true');
         this.modellingservice.userlogin=true;
@@ -64,6 +67,7 @@ admin(){
 
     if(admin){
       alert("Login Successfully");
+
       this.route.navigate(['Admin'])
 
     }

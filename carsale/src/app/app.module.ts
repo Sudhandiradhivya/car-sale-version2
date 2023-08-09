@@ -71,7 +71,9 @@ import { PasswordresetComponent } from './passwordreset/passwordreset.component'
 import { RouterModule } from '@angular/router';
 import { ProductListComponent } from './product-list/product-list.component';
 import { ProductComponent } from './product-list/product/product.component';
-
+import { LoggerModule, NgxLoggerLevel } from "ngx-logger";
+// HttpClientModule is only needed if you want to log on server or if you want to inspect sourcemaps
+// import { HttpClientModule } from "@angular/common/http";
 @NgModule({
   declarations: [
     AppComponent,
@@ -141,6 +143,11 @@ import { ProductComponent } from './product-list/product/product.component';
     MatCardModule,
     MatDialogModule,
     RouterModule,
+    LoggerModule.forRoot({
+      serverLoggingUrl: '/api/logs',
+      level: NgxLoggerLevel.DEBUG,
+      serverLogLevel: NgxLoggerLevel.ERROR
+    }),
    BrowserAnimationsModule
 
   ],

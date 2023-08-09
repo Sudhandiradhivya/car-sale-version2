@@ -10,6 +10,7 @@ import { HeaderComponent } from '../header/header.component';
 import { FooterComponent } from '../footer/footer.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { ActivatedRoute, RouterModule } from '@angular/router';
+import { NGXLogger } from 'ngx-logger';
 
 describe('LoginnewComponent', () => {
   let component: LoginnewComponent;
@@ -20,6 +21,13 @@ describe('LoginnewComponent', () => {
       imports: [HttpClientModule,MatDialogModule,ReactiveFormsModule,RouterModule],
       declarations: [LoginnewComponent,HeaderComponent,FooterComponent ],
       providers: [
+        {
+          provide: NGXLogger,
+          useValue: {
+            // Create a mock of NGXLogger if needed
+          },
+        },
+
         // Provide ActivatedRoute
         {
           provide: ActivatedRoute,
@@ -28,10 +36,11 @@ describe('LoginnewComponent', () => {
           },
         },]
     })
+    
     .compileComponents();
   }));
 
-  
+
   beforeEach(() => {
     fixture = TestBed.createComponent(LoginnewComponent);
     component = fixture.componentInstance;
