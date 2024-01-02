@@ -63,7 +63,6 @@ import { MatDialog, MatDialogModule } from '@angular/material/dialog';
 import { ViewDetailsComponent } from './view-details/view-details.component';
 import { OrderAcceptedPageComponent } from './OrderAcceptedPage/OrderAcceptedPage.component';
 import { ButtonfilterComponent } from './buttonfilter/buttonfilter.component';
-import { ServiceAcceptedpageComponent } from './serviceAcceptedpage/serviceAcceptedpage.component';
 import { SearchComponent } from './search/search.component';
 import { CountdownComponent } from './countdown/countdown.component';
 import { PayComponent } from './pay/pay.component';
@@ -72,6 +71,8 @@ import { RouterModule } from '@angular/router';
 import { ProductListComponent } from './product-list/product-list.component';
 import { ProductComponent } from './product-list/product/product.component';
 import { LoggerModule, NgxLoggerLevel } from "ngx-logger";
+
+
 // HttpClientModule is only needed if you want to log on server or if you want to inspect sourcemaps
 // import { HttpClientModule } from "@angular/common/http";
 @NgModule({
@@ -116,13 +117,15 @@ import { LoggerModule, NgxLoggerLevel } from "ngx-logger";
       ViewDetailsComponent,
       OrderAcceptedPageComponent,
       ButtonfilterComponent,
-      ServiceAcceptedpageComponent,
+
       SearchComponent,
       CountdownComponent,
       PayComponent,
       PasswordresetComponent,
       ProductListComponent,
-      ProductComponent
+      ProductComponent,
+
+
 
    ],
   imports: [

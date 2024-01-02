@@ -6,8 +6,9 @@ import {MatTableDataSource} from '@angular/material/table';
 import { HttpClient } from '@angular/common/http';
 import { MatTableModule } from '@angular/material/table';
 import { CdkTableModule } from '@angular/cdk/table';
-
 import { ServiceAcceptedpageComponent } from '../serviceAcceptedpage/serviceAcceptedpage.component';
+
+// import { ServiceAcceptedpageComponent } from '../serviceAcceptedpage/serviceAcceptedpage.component';
 @Component({
   selector: 'app-serviceDetails',
   templateUrl: './serviceDetails.component.html',
@@ -85,7 +86,7 @@ export class ServiceDetailsComponent implements OnInit {
          "status":"Service Accepted"
        }
 this.http.post<any>("http://localhost:3000/ServiceAcceptDetails",body).subscribe(()=>{
-  
+
 })
   }
 }

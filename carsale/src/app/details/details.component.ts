@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Example } from '../example';
 import { CarsService } from '../cars.service';
 import { Car } from '../car';
-
+import { FormsModule } from '@angular/forms';
 @Component({
   selector: 'app-details',
   templateUrl: './details.component.html',
@@ -32,7 +32,7 @@ ngOnInit(){
 
 
   changeSearchValue(eventData:Event){
-      
+
       this.searchValue=(<HTMLInputElement>eventData.target).value;
   }
 
