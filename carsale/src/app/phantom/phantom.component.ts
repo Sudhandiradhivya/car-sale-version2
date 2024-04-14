@@ -21,19 +21,7 @@ carModel:any;
   }
 phantomImg=phantomImages;
 
-  // url: string = "../../../../assets/ph1-r.jpg";
-  // imageChange(event: any){
-  //     this.url = event.target.src;
-  // }
 
-  // image:string="../../assets/ph4-b.jpg"
-  // Change(event: any){
-  //     this.image = event.target.src;
-  // }
-  // content:string="../../assets/ph7-w.jpg"
-  // ghost(event: any){
-  //     this.content = event.target.src;
-  // }
   openDialog(details:any) {
     console.log(details);
     this.service.content=details.name;
@@ -47,5 +35,5 @@ this.cullinan();
   cullinan(){
     this.service.content='Phantom';
   }
-  
+
 }
